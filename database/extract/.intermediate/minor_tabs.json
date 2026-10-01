@@ -1,0 +1,6033 @@
+{
+  "unmapped": {
+    "tools": {},
+    "people": {
+      "p": 1
+    },
+    "categories": {},
+    "contact_chip_values": {},
+    "daily_cells": {}
+  },
+  "warnings": [
+    "Endorsement!row 268: missing date",
+    "Endorsement!row 268: missing shift",
+    "Endorsement!row 419: missing date",
+    "Endorsement!row 419: missing shift",
+    "Endorsement!row 1689: row has an issue but no tool -> tool_code blank",
+    "PM STATUS MARCH 2026: tool SAA71H appears twice (raw 'SAA71H' / 'SAA71H'); kept the row with more filled cells (new: 34 vs 19)",
+    "PM STATUS MAY 2026: tool SAA71H appears twice (raw 'SAA71H' / 'SAA71H'); kept the row with more filled cells (first: 23 vs 23)",
+    "typo date '5/212026' at PM STATUS MAY 2026!row 35 -> repaired to 2026-05-21",
+    "PM STATUS MAY 2026: tool SAA48H appears twice (raw 'SAA48H' / 'SAA48H'); kept the row with more filled cells (first: 34 vs 20)",
+    "PM STATUS APRIL 2026: tool SAA71H appears twice (raw 'SAA71H' / 'SAA71H'); kept the row with more filled cells (first: 34 vs 23)",
+    "PM STATUS JULY 2026: tool SAA71H appears twice (raw 'SAA71H' / 'SAA71H'); kept the row with more filled cells (first: 19 vs 19)",
+    "PM STATUS AUGUST 2026: tool SAA71H appears twice (raw 'SAA71H' / 'SAA71H'); kept the row with more filled cells (first: 19 vs 19)",
+    "PM STATUS SEPTEMBER 2026: tool SAA71H appears twice (raw 'SAA71H' / 'SAA71H'); kept the row with more filled cells (first: 19 vs 19)",
+    "PM STATUS MAY 2025: tool SAA71H appears twice (raw 'SAA71H' / 'SAA71H'); kept the row with more filled cells (first: 19 vs 19)",
+    "typo date '4/14//2025' at PM STATUS APRIL 2025!row 22 -> repaired to 2025-04-14",
+    "PM STATUS APRIL 2025: tool SAA71H appears twice (raw 'SAA71H' / 'SAA71H'); kept the row with more filled cells (first: 19 vs 19)",
+    "PM STATUS OCTOBER 2025: tool SAA71H appears twice (raw 'SAA71H' / 'SAA71H'); kept the row with more filled cells (new: 34 vs 19)",
+    "PM STATUS NOVEMBER 2025: tool SAA71H appears twice (raw 'SAA71H' / 'SAA71H'); kept the row with more filled cells (new: 34 vs 19)",
+    "PM STATUS DECEMBER 2025: tool SAA71H appears twice (raw 'SAA71H' / 'SAA71H'); kept the row with more filled cells (first: 19 vs 19)",
+    "PM STATUS JANUARY 2026: tool SAA71H appears twice (raw 'SAA71H' / 'SAA71H'); kept the row with more filled cells (first: 34 vs 19)",
+    "PM STATUS FEBRUARY 2026: tool SAA71H appears twice (raw 'SAA71H' / 'SAA71H'); kept the row with more filled cells (first: 34 vs 19)",
+    "PM STATUS SEPTEMBER 2025: tool SAA71H appears twice (raw 'SAA71H' / 'SAA71H'); kept the row with more filled cells (first: 32 vs 19)",
+    "PM STATUS AUGUST 2025: tool SAA71H appears twice (raw 'SAA71H' / 'SAA71H'); kept the row with more filled cells (first: 19 vs 19)",
+    "PM STATUS JULY 2025: tool SAA71H appears twice (raw 'SAA71H' / 'SAA71H'); kept the row with more filled cells (first: 19 vs 19)",
+    "Contact Chip!row 62: tool SAA78H already listed at row 61 (this row: region 'CB Line', type 'SAAT03'); region/type taken from the first row, cells merged",
+    "Contact Chip!row 63: tool SAA78H already listed at row 61 (this row: region 'CB Line', type 'SAAT03'); region/type taken from the first row, cells merged",
+    "typo date '11/122025' at FIT OCAP!row 63 -> repaired to 2025-11-12",
+    "typo date '12/012025' at FIT OCAP!row 64 -> repaired to 2025-12-01",
+    "unparseable date '05/09/20256' at FIT OCAP!row 69 -> blank"
+  ],
+  "decisions": [
+    "Endorsement: rows with neither Tool nor Issue are skipped; a row with an Issue but no Tool is kept with blank tool_code; Remarks DONE/Done -> done, Ongoing -> ongoing, blank -> open",
+    "PM STATUS: sheet 'APRIL 2025' skipped (not a 'PM STATUS <MONTH> <YEAR>' tab; it is empty)",
+    "FIT OCAP: columns ['F'] are not in the documented header -> `extra` JSON",
+    "FIT OCAP: rows that only carry the running number (template filler) are not emitted",
+    "Weekly OOC: rows that only carry the running number (template filler) are not emitted"
+  ],
+  "tools": {
+    "endorsement": {
+      "SAA04H": {
+        "raw": [
+          "SAA04H",
+          "SAA4H"
+        ]
+      },
+      "SAA01H": {
+        "raw": [
+          "SAA01H"
+        ]
+      },
+      "SAA76H": {
+        "raw": [
+          "SAA76H",
+          "SAA76"
+        ]
+      },
+      "SAA48H": {
+        "raw": [
+          "SAA48H"
+        ]
+      },
+      "SAA51H": {
+        "raw": [
+          "SAA51H"
+        ]
+      },
+      "SAA54H": {
+        "raw": [
+          "SAA54H",
+          "SAA 54H"
+        ]
+      },
+      "SAA79H": {
+        "raw": [
+          "SAA79H",
+          "SA79H"
+        ]
+      },
+      "SAA33H": {
+        "raw": [
+          "SAA33H",
+          "SAA33",
+          "SASA33"
+        ]
+      },
+      "SAA68H": {
+        "raw": [
+          "SAA68H"
+        ]
+      },
+      "SAA59H": {
+        "raw": [
+          "SAA59H"
+        ]
+      },
+      "SAA52H": {
+        "raw": [
+          "SAA52H"
+        ]
+      },
+      "SAA60H": {
+        "raw": [
+          "SAA60H"
+        ]
+      },
+      "SAA74H": {
+        "raw": [
+          "SAA74H"
+        ]
+      },
+      "SAA05H": {
+        "raw": [
+          "SAA05H",
+          "SAA5H",
+          "SAA05"
+        ]
+      },
+      "SAA82H": {
+        "raw": [
+          "SAA82H"
+        ]
+      },
+      "SAA45H": {
+        "raw": [
+          "SAA45H"
+        ]
+      },
+      "SAA53H": {
+        "raw": [
+          "SAA53H",
+          "SA53H"
+        ]
+      },
+      "SAA64H": {
+        "raw": [
+          "SAA64H"
+        ]
+      },
+      "SAA66H": {
+        "raw": [
+          "SAA66H"
+        ]
+      },
+      "SAA42H": {
+        "raw": [
+          "SAA42H"
+        ]
+      },
+      "SAA07H": {
+        "raw": [
+          "SAA07H"
+        ]
+      },
+      "SAA20H": {
+        "raw": [
+          "SAA20H"
+        ]
+      },
+      "SAA44H": {
+        "raw": [
+          "SAA44H"
+        ]
+      },
+      "SAA57H": {
+        "raw": [
+          "SAA57H"
+        ]
+      },
+      "SAA08H": {
+        "raw": [
+          "SAA08H"
+        ]
+      },
+      "SAA83H": {
+        "raw": [
+          "SAA83H"
+        ]
+      },
+      "SAA55H": {
+        "raw": [
+          "SAA55H"
+        ]
+      },
+      "SAA70H": {
+        "raw": [
+          "SAA70H"
+        ]
+      },
+      "SAA77H": {
+        "raw": [
+          "SAA77H",
+          "SAA677H"
+        ]
+      },
+      "SAA47H": {
+        "raw": [
+          "SAA47H"
+        ]
+      },
+      "SAA65H": {
+        "raw": [
+          "SAA65H"
+        ]
+      },
+      "SAA71H": {
+        "raw": [
+          "SAA71H"
+        ]
+      },
+      "SAA09H": {
+        "raw": [
+          "SAA09H"
+        ]
+      },
+      "SAA72H": {
+        "raw": [
+          "SAA72H",
+          "SA72H"
+        ]
+      },
+      "SAA75H": {
+        "raw": [
+          "SAA75H"
+        ]
+      },
+      "SAA73H": {
+        "raw": [
+          "SAA73H",
+          "SAA73"
+        ]
+      },
+      "SAA49H": {
+        "raw": [
+          "SAA49H"
+        ]
+      },
+      "SAA78H": {
+        "raw": [
+          "SAA78H"
+        ]
+      }
+    },
+    "pm_status": {
+      "SAA07H": {
+        "raw": [
+          "SAA07H"
+        ],
+        "region": "Luzon",
+        "tool_type": "SAAT05",
+        "by_period": {
+          "2026-03-01": {
+            "ee": "JOHN JOSEPH MINGO",
+            "ee_ids": [
+              "9012"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-05-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-04-01": {
+            "ee": "JOHN JOSEPH MINGO",
+            "ee_ids": [
+              "9012"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-09-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-05-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-04-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-10-01": {
+            "ee": "HILETON MAGO",
+            "ee_ids": [
+              "9013"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-11-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-12-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-01-01": {
+            "ee": "JOHN JOSEPH MINGO",
+            "ee_ids": [
+              "9012"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-02-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-09-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-08-01": {
+            "ee": "Arnel",
+            "ee_ids": [
+              "9018"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          }
+        }
+      },
+      "SAA51H": {
+        "raw": [
+          "SAA51H"
+        ],
+        "region": "Luzon",
+        "tool_type": "SAAT05",
+        "by_period": {
+          "2026-03-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-05-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-04-01": {
+            "ee": "JOHN JOSEPH MINGO",
+            "ee_ids": [
+              "9012"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-07-01": {
+            "ee": "Ralf Anthony David",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-09-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-05-01": {
+            "ee": "Ramonchito",
+            "ee_ids": [
+              "9015"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-04-01": {
+            "ee": "Ramonchito",
+            "ee_ids": [
+              "9015"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-10-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-11-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-12-01": {
+            "ee": "Ralf Anthony David",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-01-01": {
+            "ee": "Ralf Anthony David",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-02-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-09-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-08-01": {
+            "ee": "Arnel",
+            "ee_ids": [
+              "9018"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          }
+        }
+      },
+      "SAA52H": {
+        "raw": [
+          "SAA52H"
+        ],
+        "region": "Luzon",
+        "tool_type": "SAAT05",
+        "by_period": {
+          "2026-03-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-05-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-04-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-09-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-05-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-04-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-10-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-11-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-12-01": {
+            "ee": "MICHAEL MONTEREY JAVIER",
+            "ee_ids": [
+              "9014"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-01-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-02-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-09-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          }
+        }
+      },
+      "SAA53H": {
+        "raw": [
+          "SAA53H"
+        ],
+        "region": "Luzon",
+        "tool_type": "SAAT05",
+        "by_period": {
+          "2026-03-01": {
+            "ee": "JOHN JOSEPH MINGO",
+            "ee_ids": [
+              "9012"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-05-01": {
+            "ee": "Ralf Anthony David",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-04-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-09-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-05-01": {
+            "ee": "Ramonchito",
+            "ee_ids": [
+              "9015"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-04-01": {
+            "ee": "Vince",
+            "ee_ids": [
+              "9020"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-10-01": {
+            "ee": "HILETON MAGO",
+            "ee_ids": [
+              "9013"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-11-01": {
+            "ee": "JOHN JOSEPH MINGO",
+            "ee_ids": [
+              "9012"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-12-01": {
+            "ee": "HILETON MAGO",
+            "ee_ids": [
+              "9013"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-01-01": {
+            "ee": "Ralf Anthony David",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-02-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-09-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-07-01": {
+            "ee": "JJ",
+            "ee_ids": [
+              "9012"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          }
+        }
+      },
+      "SAA54H": {
+        "raw": [
+          "SAA54H"
+        ],
+        "region": "Luzon",
+        "tool_type": "SAAT05",
+        "by_period": {
+          "2026-03-01": {
+            "ee": "JAY BOLANOS",
+            "ee_ids": [
+              "9017"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-05-01": {
+            "ee": "Ralf Anthony David",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-04-01": {
+            "ee": "Ralf Anthony David",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-09-01": {
+            "ee": "Glenn",
+            "ee_ids": [
+              "9016"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-05-01": {
+            "ee": "Jay",
+            "ee_ids": [
+              "9017"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-04-01": {
+            "ee": "Ramonchito",
+            "ee_ids": [
+              "9015"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-10-01": {
+            "ee": "GLENN RUBIS JR",
+            "ee_ids": [
+              "9016"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-11-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-12-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-01-01": {
+            "ee": "Ralf Anthony David",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-02-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-09-01": {
+            "ee": "HILETON MAGO",
+            "ee_ids": [
+              "9013"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-08-01": {
+            "ee": "Arnel",
+            "ee_ids": [
+              "9018"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          }
+        }
+      },
+      "SAA59H": {
+        "raw": [
+          "SAA59H"
+        ],
+        "region": "Luzon",
+        "tool_type": "SAAT05",
+        "by_period": {
+          "2026-03-01": {
+            "ee": "JOHN JOSEPH MINGO",
+            "ee_ids": [
+              "9012"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-05-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-04-01": {
+            "ee": "Ralf Anthony David",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-09-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-05-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-04-01": {
+            "ee": "Antonio",
+            "ee_ids": [
+              "9022"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-10-01": {
+            "ee": "HILETON MAGO",
+            "ee_ids": [
+              "9013"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-11-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-12-01": {
+            "ee": "HILETON MAGO",
+            "ee_ids": [
+              "9013"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-01-01": {
+            "ee": "JOHN JOSEPH MINGO",
+            "ee_ids": [
+              "9012"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-02-01": {
+            "ee": "HILETON MAGO",
+            "ee_ids": [
+              "9013"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-09-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          }
+        }
+      },
+      "SAA64H": {
+        "raw": [
+          "SAA64H"
+        ],
+        "region": "Luzon",
+        "tool_type": "SAAT05",
+        "by_period": {
+          "2026-03-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-05-01": {
+            "ee": "Ralf Anthony David",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-04-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-09-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-05-01": {
+            "ee": "Ramonchito",
+            "ee_ids": [
+              "9015"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-04-01": {
+            "ee": "Antonio",
+            "ee_ids": [
+              "9022"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-10-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-11-01": {
+            "ee": "Ralf Anthony David",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-12-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-01-01": {
+            "ee": "HILETON MAGO",
+            "ee_ids": [
+              "9013"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-02-01": {
+            "ee": "HILETON MAGO",
+            "ee_ids": [
+              "9013"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-09-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-07-01": {
+            "ee": "VINZ",
+            "ee_ids": [
+              "9009"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          }
+        }
+      },
+      "SAA66H": {
+        "raw": [
+          "SAA66H"
+        ],
+        "region": "Luzon",
+        "tool_type": "SAAT05",
+        "by_period": {
+          "2026-03-01": {
+            "ee": "JOHN JOSEPH MINGO",
+            "ee_ids": [
+              "9012"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-05-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-04-01": {
+            "ee": "JOHN JOSEPH MINGO",
+            "ee_ids": [
+              "9012"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-09-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-05-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-04-01": {
+            "ee": "Ramonchito",
+            "ee_ids": [
+              "9015"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-10-01": {
+            "ee": "JAY",
+            "ee_ids": [
+              "9017"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-11-01": {
+            "ee": "Ralf Anthony David",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-12-01": {
+            "ee": "Ralf Anthony David",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-01-01": {
+            "ee": "JOHN JOSEPH MINGO",
+            "ee_ids": [
+              "9012"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-02-01": {
+            "ee": "GLENN RUBIS JR.",
+            "ee_ids": [
+              "9016"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-09-01": {
+            "ee": "HILETON MAGO",
+            "ee_ids": [
+              "9013"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-08-01": {
+            "ee": "Arnel",
+            "ee_ids": [
+              "9018"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          }
+        }
+      },
+      "SAA68H": {
+        "raw": [
+          "SAA68H"
+        ],
+        "region": "Luzon",
+        "tool_type": "SAAT07",
+        "by_period": {
+          "2026-03-01": {
+            "ee": "GLENN RUBIS JR.",
+            "ee_ids": [
+              "9016"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT07"
+          },
+          "2026-05-01": {
+            "ee": "Ralf Anthony David",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT07"
+          },
+          "2026-04-01": {
+            "ee": "JOHN JOSEPH MINGO",
+            "ee_ids": [
+              "9012"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT07"
+          },
+          "2026-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT07"
+          },
+          "2026-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT07"
+          },
+          "2026-09-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT07"
+          },
+          "2025-05-01": {
+            "ee": "Ramonchito",
+            "ee_ids": [
+              "9015"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT07"
+          },
+          "2025-04-01": {
+            "ee": "Ramonchito",
+            "ee_ids": [
+              "9015"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT07"
+          },
+          "2025-10-01": {
+            "ee": "JOHN JOSEPH MINGO",
+            "ee_ids": [
+              "9012"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT07"
+          },
+          "2025-11-01": {
+            "ee": "RAMONCHITO JUANILLAS",
+            "ee_ids": [
+              "9015"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT07"
+          },
+          "2025-12-01": {
+            "ee": "Ralf Anthony David",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT07"
+          },
+          "2026-01-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT07"
+          },
+          "2026-02-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT07"
+          },
+          "2025-09-01": {
+            "ee": "MICHAEL MONTEREY JAVIER",
+            "ee_ids": [
+              "9014"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT07"
+          },
+          "2025-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT07"
+          },
+          "2025-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT07"
+          }
+        }
+      },
+      "SAA71H": {
+        "raw": [
+          "SAA71H"
+        ],
+        "region": "Luzon",
+        "tool_type": "SAAT07",
+        "by_period": {
+          "2026-03-01": {
+            "ee": "JOHN JOSEPH MINGO",
+            "ee_ids": [
+              "9012"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-05-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT07"
+          },
+          "2026-04-01": {
+            "ee": "JOHN JOSEPH MINGO",
+            "ee_ids": [
+              "9012"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT07"
+          },
+          "2026-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT07"
+          },
+          "2026-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT07"
+          },
+          "2026-09-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT07"
+          },
+          "2025-05-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT07"
+          },
+          "2025-04-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT07"
+          },
+          "2025-10-01": {
+            "ee": "HILETON MAGO",
+            "ee_ids": [
+              "9013"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-11-01": {
+            "ee": "GLENN RUBIS JR.",
+            "ee_ids": [
+              "9016"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-12-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT07"
+          },
+          "2026-01-01": {
+            "ee": "Ralf Anthony David",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT07"
+          },
+          "2026-02-01": {
+            "ee": "JOHN JOSEPH MINGO",
+            "ee_ids": [
+              "9012"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT07"
+          },
+          "2025-09-01": {
+            "ee": "MICHAEL MONTEREY JAVIER",
+            "ee_ids": [
+              "9014"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT07"
+          },
+          "2025-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT07"
+          },
+          "2025-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT07"
+          }
+        }
+      },
+      "SAA72H": {
+        "raw": [
+          "SAA72H"
+        ],
+        "region": "Luzon",
+        "tool_type": "SAAT05",
+        "by_period": {
+          "2026-03-01": {
+            "ee": "GLENN RUBIS JR.",
+            "ee_ids": [
+              "9016"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-05-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-04-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-09-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-05-01": {
+            "ee": "Antonio",
+            "ee_ids": [
+              "9022"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-04-01": {
+            "ee": "Antonio",
+            "ee_ids": [
+              "9022"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-10-01": {
+            "ee": "Ralf Anthony David",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-11-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-12-01": {
+            "ee": "JAY BOLANOS",
+            "ee_ids": [
+              "9017"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-01-01": {
+            "ee": "JOHN JOSEPH MINGO",
+            "ee_ids": [
+              "9012"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-02-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-09-01": {
+            "ee": "HILETON MAGO",
+            "ee_ids": [
+              "9013"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-08-01": {
+            "ee": "Arnel",
+            "ee_ids": [
+              "9018"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-07-01": {
+            "ee": "RAF",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          }
+        }
+      },
+      "SAA73H": {
+        "raw": [
+          "SAA73H"
+        ],
+        "region": "Luzon",
+        "tool_type": "SAAT05",
+        "by_period": {
+          "2026-03-01": {
+            "ee": "JOHN JOSEPH MINGO",
+            "ee_ids": [
+              "9012"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-05-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-04-01": {
+            "ee": "JOHN JOSEPH MINGO",
+            "ee_ids": [
+              "9012"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-09-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-05-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-04-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-10-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-11-01": {
+            "ee": "GLENN RUBIS JR.",
+            "ee_ids": [
+              "9016"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-12-01": {
+            "ee": "MICHAEL MONTEREY JAVIER",
+            "ee_ids": [
+              "9014"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-01-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-02-01": {
+            "ee": "Ralf Anthony David",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-09-01": {
+            "ee": "RAMONCHITO",
+            "ee_ids": [
+              "9015"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          }
+        }
+      },
+      "SAA74H": {
+        "raw": [
+          "SAA74H"
+        ],
+        "region": "Luzon",
+        "tool_type": "SAAT05",
+        "by_period": {
+          "2026-03-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-05-01": {
+            "ee": "Ralf Anthony David",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-04-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-09-01": {
+            "ee": "Glenn",
+            "ee_ids": [
+              "9016"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-05-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-04-01": {
+            "ee": "Antonio",
+            "ee_ids": [
+              "9022"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-10-01": {
+            "ee": "Ralf Anthony David",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-11-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-12-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-01-01": {
+            "ee": "HILETON MAGO",
+            "ee_ids": [
+              "9013"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-02-01": {
+            "ee": "GLENN RUBIS JR.",
+            "ee_ids": [
+              "9016"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-09-01": {
+            "ee": "HILETON MAGO",
+            "ee_ids": [
+              "9013"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-08-01": {
+            "ee": "Arnel",
+            "ee_ids": [
+              "9018"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          }
+        }
+      },
+      "SAA76H": {
+        "raw": [
+          "SAA76H"
+        ],
+        "region": "Luzon",
+        "tool_type": "SAAT05",
+        "by_period": {
+          "2026-03-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-05-01": {
+            "ee": "Ralf Anthony David",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-04-01": {
+            "ee": "Ralf Anthony David",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-09-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-05-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-04-01": {
+            "ee": "Antonio",
+            "ee_ids": [
+              "9022"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-10-01": {
+            "ee": "MICHAEL MONTEREY JAVIER",
+            "ee_ids": [
+              "9014"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-11-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-12-01": {
+            "ee": "Ralf Anthony David",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-01-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2026-02-01": {
+            "ee": "MICHAEL MONTEREY JAVIER",
+            "ee_ids": [
+              "9014"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-09-01": {
+            "ee": "JOHN JOSEPH MINGO",
+            "ee_ids": [
+              "9012"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-08-01": {
+            "ee": "Arnel",
+            "ee_ids": [
+              "9018"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          },
+          "2025-07-01": {
+            "ee": "VINZ",
+            "ee_ids": [
+              "9009"
+            ],
+            "region": "Luzon",
+            "tool_type": "SAAT05"
+          }
+        }
+      },
+      "SAA01H": {
+        "raw": [
+          "SAA01H"
+        ],
+        "region": "Mindanao",
+        "tool_type": "SAAT05",
+        "by_period": {
+          "2026-03-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-05-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-04-01": {
+            "ee": "Ralf Anthony David",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-09-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-05-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-04-01": {
+            "ee": "Antonio",
+            "ee_ids": [
+              "9022"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-10-01": {
+            "ee": "GLENN RUBIS JR",
+            "ee_ids": [
+              "9016"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-11-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-12-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-01-01": {
+            "ee": "JOHN JOSEPH MINGO",
+            "ee_ids": [
+              "9012"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-02-01": {
+            "ee": "Ralf Anthony David",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-09-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          }
+        }
+      },
+      "SAA03H": {
+        "raw": [
+          "SAA03H"
+        ],
+        "region": "Mindanao",
+        "tool_type": "SAAT05",
+        "by_period": {
+          "2026-03-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-05-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-04-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-09-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-05-01": {
+            "ee": "Vince",
+            "ee_ids": [
+              "9020"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-04-01": {
+            "ee": "Antonio",
+            "ee_ids": [
+              "9022"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-10-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-11-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-12-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-01-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-02-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-09-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          }
+        }
+      },
+      "SAA04H": {
+        "raw": [
+          "SAA04H"
+        ],
+        "region": "Mindanao",
+        "tool_type": "SAAT05",
+        "by_period": {
+          "2026-03-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-05-01": {
+            "ee": "Ralf Anthony David",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-04-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-09-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-05-01": {
+            "ee": "Antonio",
+            "ee_ids": [
+              "9022"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-04-01": {
+            "ee": "Antonio",
+            "ee_ids": [
+              "9022"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-10-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-11-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-12-01": {
+            "ee": "JOHN JOSEPH MINGO",
+            "ee_ids": [
+              "9012"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-01-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-02-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-09-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-08-01": {
+            "ee": "Arnel",
+            "ee_ids": [
+              "9018"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-07-01": {
+            "ee": "RAF",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          }
+        }
+      },
+      "SAA05H": {
+        "raw": [
+          "SAA05H"
+        ],
+        "region": "Mindanao",
+        "tool_type": "SAAT05",
+        "by_period": {
+          "2026-03-01": {
+            "ee": "JOHN JOSEPH MINGO",
+            "ee_ids": [
+              "9012"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-05-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-04-01": {
+            "ee": "Ralf Anthony David",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-09-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-05-01": {
+            "ee": "Jay",
+            "ee_ids": [
+              "9017"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-04-01": {
+            "ee": "Antonio",
+            "ee_ids": [
+              "9022"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-10-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-11-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-12-01": {
+            "ee": "GLENN RUBIS JR.",
+            "ee_ids": [
+              "9016"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-01-01": {
+            "ee": "HILETON MAGO",
+            "ee_ids": [
+              "9013"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-02-01": {
+            "ee": "HILETON MAGO",
+            "ee_ids": [
+              "9013"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-09-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-08-01": {
+            "ee": "Sam",
+            "ee_ids": [
+              "9005"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          }
+        }
+      },
+      "SAA08H": {
+        "raw": [
+          "SAA08H"
+        ],
+        "region": "Mindanao",
+        "tool_type": "SAAT05",
+        "by_period": {
+          "2026-03-01": {
+            "ee": "Ralf Anthony David",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-05-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-04-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-07-01": {
+            "ee": "Ralf Anthony David",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-09-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-05-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-04-01": {
+            "ee": "Ramonchito",
+            "ee_ids": [
+              "9015"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-10-01": {
+            "ee": "RAMONCHITO JUANILLAS",
+            "ee_ids": [
+              "9015"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-11-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-12-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-01-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-02-01": {
+            "ee": "Ralf Anthony David",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-09-01": {
+            "ee": "JOSHUA NATANAUAN",
+            "ee_ids": [
+              "9019"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-08-01": {
+            "ee": "Ton/Chito",
+            "ee_ids": [
+              "9022",
+              "9015"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          }
+        }
+      },
+      "SAA09H": {
+        "raw": [
+          "SAA09H"
+        ],
+        "region": "Mindanao",
+        "tool_type": "SAAT05",
+        "by_period": {
+          "2026-03-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-05-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-04-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-09-01": {
+            "ee": "Noel",
+            "ee_ids": [
+              "9021"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-05-01": {
+            "ee": "Vince",
+            "ee_ids": [
+              "9020"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-04-01": {
+            "ee": "Antonio",
+            "ee_ids": [
+              "9022"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-10-01": {
+            "ee": "RAMONCHITO JUANILLAS",
+            "ee_ids": [
+              "9015"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-11-01": {
+            "ee": "HILETON MAGO",
+            "ee_ids": [
+              "9013"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-12-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-01-01": {
+            "ee": "JOHN JOSEPH MINGO",
+            "ee_ids": [
+              "9012"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-02-01": {
+            "ee": "JOHN JOSEPH MINGO",
+            "ee_ids": [
+              "9012"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-09-01": {
+            "ee": "Arnel",
+            "ee_ids": [
+              "9018"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-08-01": {
+            "ee": "Ton/Chito",
+            "ee_ids": [
+              "9022",
+              "9015"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          }
+        }
+      },
+      "SAA20H": {
+        "raw": [
+          "SAA20H"
+        ],
+        "region": "CB Line",
+        "tool_type": "SAAT07",
+        "by_period": {
+          "2026-03-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2026-05-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2026-04-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2026-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2026-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2026-09-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2025-10-01": {
+            "ee": "HILETON MAGO",
+            "ee_ids": [
+              "9013"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2025-11-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2025-12-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2026-01-01": {
+            "ee": "Ralf Anthony David",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2026-02-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          }
+        }
+      },
+      "SAA33H": {
+        "raw": [
+          "SAA33H"
+        ],
+        "region": "CB Line",
+        "tool_type": "SAAT05",
+        "by_period": {
+          "2026-03-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-05-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-04-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-09-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-05-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-04-01": {
+            "ee": "Vince",
+            "ee_ids": [
+              "9020"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-10-01": {
+            "ee": "RAMONCHITO JUANILLAS",
+            "ee_ids": [
+              "9015"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-11-01": {
+            "ee": "JAY BOLANOS",
+            "ee_ids": [
+              "9017"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-12-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-01-01": {
+            "ee": "JOHN JOSEPH MINGO",
+            "ee_ids": [
+              "9012"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-02-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-09-01": {
+            "ee": "Jay Bolaños",
+            "ee_ids": [
+              "9017"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          }
+        }
+      },
+      "SAA41H": {
+        "raw": [
+          "SAA41H"
+        ],
+        "region": "CB Line",
+        "tool_type": "SAAT05",
+        "by_period": {
+          "2026-03-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-05-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-04-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-09-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-05-01": {
+            "ee": "Ramonchito",
+            "ee_ids": [
+              "9015"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-04-01": {
+            "ee": "Vince",
+            "ee_ids": [
+              "9020"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-10-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-11-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-12-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-01-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-02-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-09-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          }
+        }
+      },
+      "SAA42H": {
+        "raw": [
+          "SAA42H"
+        ],
+        "region": "CB Line",
+        "tool_type": "SAAT05",
+        "by_period": {
+          "2026-03-01": {
+            "ee": "JOHN JOSEPH MINGO",
+            "ee_ids": [
+              "9012"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-05-01": {
+            "ee": "Ralf Anthony David",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-04-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-07-01": {
+            "ee": "Ralf Anthony David",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-09-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-05-01": {
+            "ee": "Vince",
+            "ee_ids": [
+              "9020"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-04-01": {
+            "ee": "Vince",
+            "ee_ids": [
+              "9020"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-10-01": {
+            "ee": "RAMONCHITO JUANILLAS",
+            "ee_ids": [
+              "9015"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-11-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-12-01": {
+            "ee": "JAY BOLANOS",
+            "ee_ids": [
+              "9017"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-01-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-02-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-09-01": {
+            "ee": "HILETON MAGO",
+            "ee_ids": [
+              "9013"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-08-01": {
+            "ee": "Jay",
+            "ee_ids": [
+              "9017"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          }
+        }
+      },
+      "SAA43H": {
+        "raw": [
+          "SAA43H"
+        ],
+        "region": "CB Line",
+        "tool_type": "SAAT05",
+        "by_period": {
+          "2026-03-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-05-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-04-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-09-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-05-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-04-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-10-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-11-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-12-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-01-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-02-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-09-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          }
+        }
+      },
+      "SAA44H": {
+        "raw": [
+          "SAA44H"
+        ],
+        "region": "CB Line",
+        "tool_type": "SAAT05",
+        "by_period": {
+          "2026-03-01": {
+            "ee": "Ralf Anthony David",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-05-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-04-01": {
+            "ee": "Ralf Anthony David",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-09-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-05-01": {
+            "ee": "Antonio",
+            "ee_ids": [
+              "9022"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-04-01": {
+            "ee": "Vince",
+            "ee_ids": [
+              "9020"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-10-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-11-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-12-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-01-01": {
+            "ee": "Ralf Anthony David",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-02-01": {
+            "ee": "GLENN RUBIS JR.",
+            "ee_ids": [
+              "9016"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-09-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          }
+        }
+      },
+      "SAA45H": {
+        "raw": [
+          "SAA45H"
+        ],
+        "region": "CB Line",
+        "tool_type": "SAAT05",
+        "by_period": {
+          "2026-03-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-05-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-04-01": {
+            "ee": "JOHN JOSEPH MINGO",
+            "ee_ids": [
+              "9012"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-09-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-05-01": {
+            "ee": "Vince",
+            "ee_ids": [
+              "9020"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-04-01": {
+            "ee": "Vince",
+            "ee_ids": [
+              "9020"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-10-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-11-01": {
+            "ee": "GLENN RUBIS JR.",
+            "ee_ids": [
+              "9016"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-12-01": {
+            "ee": "JOHN JOSEPH MINGO",
+            "ee_ids": [
+              "9012"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-01-01": {
+            "ee": "HILETON MAGO",
+            "ee_ids": [
+              "9013"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-02-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-09-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-07-01": {
+            "ee": "Arnel",
+            "ee_ids": [
+              "9018"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          }
+        }
+      },
+      "SAA46H": {
+        "raw": [
+          "SAA46H"
+        ],
+        "region": "Mindanao",
+        "tool_type": "SAAT05",
+        "by_period": {
+          "2026-03-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-05-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-04-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-09-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-05-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-04-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-10-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-11-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-12-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-01-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-02-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-09-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          }
+        }
+      },
+      "SAA47H": {
+        "raw": [
+          "SAA47H"
+        ],
+        "region": "CB Line",
+        "tool_type": "SAAT05",
+        "by_period": {
+          "2026-03-01": {
+            "ee": "Ralf Anthony David",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-05-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-04-01": {
+            "ee": "Ralf Anthony David",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-07-01": {
+            "ee": "Glenn Rubis",
+            "ee_ids": [
+              "9016"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-09-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-05-01": {
+            "ee": "Vince",
+            "ee_ids": [
+              "9020"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-04-01": {
+            "ee": "Vince",
+            "ee_ids": [
+              "9020"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-10-01": {
+            "ee": "JOHN JOSEPH MINGO",
+            "ee_ids": [
+              "9012"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-11-01": {
+            "ee": "JOHN JOSEPH MINGO",
+            "ee_ids": [
+              "9012"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-12-01": {
+            "ee": "HILETON MAGO",
+            "ee_ids": [
+              "9013"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-01-01": {
+            "ee": "Ralf Anthony David",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-02-01": {
+            "ee": "Arnel Galve",
+            "ee_ids": [
+              "9018"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-09-01": {
+            "ee": "HILETON MAGO",
+            "ee_ids": [
+              "9013"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          }
+        }
+      },
+      "SAA48H": {
+        "raw": [
+          "SAA48H"
+        ],
+        "region": "CB Line",
+        "tool_type": "SAAT07",
+        "by_period": {
+          "2026-03-01": {
+            "ee": "Ralf Anthony David",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2026-05-01": {
+            "ee": "Ralf Anthony David",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2026-04-01": {
+            "ee": "Ralf Anthony David",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2026-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2026-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2026-09-01": {
+            "ee": "JJ",
+            "ee_ids": [
+              "9012"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2025-05-01": {
+            "ee": "Vince",
+            "ee_ids": [
+              "9020"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2025-04-01": {
+            "ee": "JJ",
+            "ee_ids": [
+              "9012"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2025-10-01": {
+            "ee": "HILETON MAGO",
+            "ee_ids": [
+              "9013"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2025-11-01": {
+            "ee": "JAY BOLANOS",
+            "ee_ids": [
+              "9017"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2025-12-01": {
+            "ee": "Ralf Anthony David",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2026-01-01": {
+            "ee": "HILETON MAGO",
+            "ee_ids": [
+              "9013"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2026-02-01": {
+            "ee": "JOHN JOSEPH MINGO",
+            "ee_ids": [
+              "9012"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2025-09-01": {
+            "ee": "RAMONCHITO",
+            "ee_ids": [
+              "9015"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2025-08-01": {
+            "ee": "Sam",
+            "ee_ids": [
+              "9005"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2025-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          }
+        }
+      },
+      "SAA50H": {
+        "raw": [
+          "SAA50H"
+        ],
+        "region": "CB Line",
+        "tool_type": "SAAT05",
+        "by_period": {
+          "2026-03-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-05-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-04-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-05-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-04-01": {
+            "ee": "Ramonchito",
+            "ee_ids": [
+              "9015"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-10-01": {
+            "ee": "JOHN JOSEPH MINGO",
+            "ee_ids": [
+              "9012"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-11-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-12-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-01-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-02-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-09-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          }
+        }
+      },
+      "SAA55H": {
+        "raw": [
+          "SAA55H"
+        ],
+        "region": "CB Line",
+        "tool_type": "SAAT05",
+        "by_period": {
+          "2026-03-01": {
+            "ee": "JOHN JOSEPH MINGO",
+            "ee_ids": [
+              "9012"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-05-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-04-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-09-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-05-01": {
+            "ee": "JJ",
+            "ee_ids": [
+              "9012"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-04-01": {
+            "ee": "Arnel",
+            "ee_ids": [
+              "9018"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-10-01": {
+            "ee": "JAY BOLANOS",
+            "ee_ids": [
+              "9017"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-11-01": {
+            "ee": "JAY BOLANOS",
+            "ee_ids": [
+              "9017"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-12-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-01-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-02-01": {
+            "ee": "JOHN JOSEPH MINGO",
+            "ee_ids": [
+              "9012"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-09-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-07-01": {
+            "ee": "RAF",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          }
+        }
+      },
+      "SAA57H": {
+        "raw": [
+          "SAA57H"
+        ],
+        "region": "CB Line",
+        "tool_type": "SAAT07",
+        "by_period": {
+          "2026-03-01": {
+            "ee": "Ralf Anthony David",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2026-05-01": {
+            "ee": "Ralf Anthony David",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2026-04-01": {
+            "ee": "JOHN JOSEPH MINGO",
+            "ee_ids": [
+              "9012"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2026-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2026-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2026-09-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2025-05-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2025-04-01": {
+            "ee": "Antonio",
+            "ee_ids": [
+              "9022"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2025-10-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2025-11-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2025-12-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2026-01-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2026-02-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2025-09-01": {
+            "ee": "Jay Bolaños",
+            "ee_ids": [
+              "9017"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2025-08-01": {
+            "ee": "Noel",
+            "ee_ids": [
+              "9021"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2025-07-01": {
+            "ee": "Arnel",
+            "ee_ids": [
+              "9018"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          }
+        }
+      },
+      "SAA60H": {
+        "raw": [
+          "SAA60H"
+        ],
+        "region": "Mindanao",
+        "tool_type": "SAAT05",
+        "by_period": {
+          "2026-03-01": {
+            "ee": "GLENN RUBIS JR.",
+            "ee_ids": [
+              "9016"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-05-01": {
+            "ee": "Ralf Anthony David",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-04-01": {
+            "ee": "JOHN JOSEPH MINGO",
+            "ee_ids": [
+              "9012"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-09-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-05-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-04-01": {
+            "ee": "Ramonchito",
+            "ee_ids": [
+              "9015"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-10-01": {
+            "ee": "HILETON MAGO",
+            "ee_ids": [
+              "9013"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-11-01": {
+            "ee": "HILETON MAGO",
+            "ee_ids": [
+              "9013"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-12-01": {
+            "ee": "Ralf Anthony David",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-01-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-02-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-09-01": {
+            "ee": "HILETON MAGO",
+            "ee_ids": [
+              "9013"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-08-01": {
+            "ee": "Arnel",
+            "ee_ids": [
+              "9018"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          }
+        }
+      },
+      "SAA65H": {
+        "raw": [
+          "SAA65H"
+        ],
+        "region": "Mindanao",
+        "tool_type": "SAAT05",
+        "by_period": {
+          "2026-03-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-05-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-04-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-09-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-05-01": {
+            "ee": "Vince",
+            "ee_ids": [
+              "9020"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-04-01": {
+            "ee": "Ramonchito",
+            "ee_ids": [
+              "9015"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-10-01": {
+            "ee": "JOHN JOSEPH MINGO",
+            "ee_ids": [
+              "9012"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-11-01": {
+            "ee": "RAMONCHITO JUANILLAS",
+            "ee_ids": [
+              "9015"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-12-01": {
+            "ee": "RAMONCHITO JUANILLAS",
+            "ee_ids": [
+              "9015"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-01-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-02-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-09-01": {
+            "ee": "HILETON MAGO",
+            "ee_ids": [
+              "9013"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          }
+        }
+      },
+      "SAA70H": {
+        "raw": [
+          "SAA70H"
+        ],
+        "region": "Mindanao",
+        "tool_type": "SAAT05",
+        "by_period": {
+          "2026-03-01": {
+            "ee": "Ralf Anthony David",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-05-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-04-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-09-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-05-01": {
+            "ee": "Ramonchito",
+            "ee_ids": [
+              "9015"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-04-01": {
+            "ee": "Ramonchito",
+            "ee_ids": [
+              "9015"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-10-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-11-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-12-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-01-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-02-01": {
+            "ee": "HILETON MAGO",
+            "ee_ids": [
+              "9013"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-09-01": {
+            "ee": "HILETON MAGO",
+            "ee_ids": [
+              "9013"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-07-01": {
+            "ee": "RAF",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          }
+        }
+      },
+      "SAA75H": {
+        "raw": [
+          "SAA75H"
+        ],
+        "region": "Mindanao",
+        "tool_type": "SAAT05",
+        "by_period": {
+          "2026-03-01": {
+            "ee": "Ralf Anthony David",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-05-01": {
+            "ee": "Ralf Anthony David",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-04-01": {
+            "ee": "Ralf Anthony David",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-09-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-05-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-04-01": {
+            "ee": "Ramonchito",
+            "ee_ids": [
+              "9015"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-10-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-11-01": {
+            "ee": "JOHN JOSEPH MINGO",
+            "ee_ids": [
+              "9012"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-12-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-01-01": {
+            "ee": "Ralf Anthony David",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2026-02-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-09-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          },
+          "2025-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "Mindanao",
+            "tool_type": "SAAT05"
+          }
+        }
+      },
+      "SAA77H": {
+        "raw": [
+          "SAA77H"
+        ],
+        "region": "CB Line",
+        "tool_type": "SAAT05",
+        "by_period": {
+          "2026-03-01": {
+            "ee": "Ralf Anthony David",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-05-01": {
+            "ee": "Ralf Anthony David",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-04-01": {
+            "ee": "Ralf Anthony David",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-09-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-05-01": {
+            "ee": "Vince/Jay",
+            "ee_ids": [
+              "9020",
+              "9017"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-04-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-10-01": {
+            "ee": "JOHN JOSEPH MINGO",
+            "ee_ids": [
+              "9012"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-11-01": {
+            "ee": "RAMONCHITO JUANILLAS",
+            "ee_ids": [
+              "9015"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-12-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-01-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-02-01": {
+            "ee": "JOHN JOSEPH MINGO",
+            "ee_ids": [
+              "9012"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-09-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-08-01": {
+            "ee": "Ton",
+            "ee_ids": [
+              "9022"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          }
+        }
+      },
+      "SAA78H": {
+        "raw": [
+          "SAA78H"
+        ],
+        "region": "CB Line",
+        "tool_type": "SAAT05",
+        "by_period": {
+          "2026-03-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-05-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-04-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-09-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-05-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-04-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-10-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-11-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-12-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-01-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2026-02-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-09-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          },
+          "2025-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT05"
+          }
+        }
+      },
+      "SAA79H": {
+        "raw": [
+          "SAA79H"
+        ],
+        "region": "CB Line",
+        "tool_type": "SAAT07",
+        "by_period": {
+          "2026-03-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2026-05-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2026-04-01": {
+            "ee": "JOHN JOSEPH MINGO",
+            "ee_ids": [
+              "9012"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2026-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2026-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2026-09-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2025-05-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2025-04-01": {
+            "ee": "Antonio",
+            "ee_ids": [
+              "9022"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2025-10-01": {
+            "ee": "Ralf Anthony David",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2025-11-01": {
+            "ee": "HILETON MAGO",
+            "ee_ids": [
+              "9013"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2025-12-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2026-01-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2026-02-01": {
+            "ee": "JOHN JOSEPH MINGO",
+            "ee_ids": [
+              "9012"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2025-09-01": {
+            "ee": "Arnel",
+            "ee_ids": [
+              "9018"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2025-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2025-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          }
+        }
+      },
+      "SAA82H": {
+        "raw": [
+          "SAA82H"
+        ],
+        "region": "CB Line",
+        "tool_type": "SAAT07",
+        "by_period": {
+          "2026-03-01": {
+            "ee": "GLENN RUBIS JR.",
+            "ee_ids": [
+              "9016"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2026-05-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2026-04-01": {
+            "ee": "JOHN JOSEPH MINGO",
+            "ee_ids": [
+              "9012"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2026-07-01": {
+            "ee": "Ralf Anthony David",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2026-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2026-09-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2025-05-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2025-04-01": {
+            "ee": "Arnel",
+            "ee_ids": [
+              "9018"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2025-10-01": {
+            "ee": "HILETON MAGO",
+            "ee_ids": [
+              "9013"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2025-11-01": {
+            "ee": "HILETON MAGO",
+            "ee_ids": [
+              "9013"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2025-12-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2026-01-01": {
+            "ee": "HILETON MAGO",
+            "ee_ids": [
+              "9013"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2026-02-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2025-09-01": {
+            "ee": "Jay Bolaños",
+            "ee_ids": [
+              "9017"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2025-08-01": {
+            "ee": "Ton",
+            "ee_ids": [
+              "9022"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2025-07-01": {
+            "ee": "RAF",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          }
+        }
+      },
+      "SAA83H": {
+        "raw": [
+          "SAA83H"
+        ],
+        "region": "CB Line",
+        "tool_type": "SAAT07",
+        "by_period": {
+          "2026-03-01": {
+            "ee": "JOHN JOSEPH MINGO",
+            "ee_ids": [
+              "9012"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2026-05-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2026-04-01": {
+            "ee": "JOHN JOSEPH MINGO",
+            "ee_ids": [
+              "9012"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2026-07-01": {
+            "ee": "Ralf Anthony David",
+            "ee_ids": [
+              "9011"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2026-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2026-09-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2025-05-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2025-04-01": {
+            "ee": "Vince",
+            "ee_ids": [
+              "9020"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2025-10-01": {
+            "ee": "HILETON MAGO",
+            "ee_ids": [
+              "9013"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2025-11-01": {
+            "ee": "JOSHUA NATANAUAN",
+            "ee_ids": [
+              "9019"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2025-12-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2026-01-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2026-02-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2025-09-01": {
+            "ee": "HILETON MAGO",
+            "ee_ids": [
+              "9013"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2025-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2025-07-01": {
+            "ee": "Arnel",
+            "ee_ids": [
+              "9018"
+            ],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          }
+        }
+      },
+      "SAA49H": {
+        "raw": [
+          "SAA49H"
+        ],
+        "region": "CB Line",
+        "tool_type": "SAAT07",
+        "by_period": {
+          "2026-07-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2026-08-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          },
+          "2026-09-01": {
+            "ee": "",
+            "ee_ids": [],
+            "region": "CB Line",
+            "tool_type": "SAAT07"
+          }
+        }
+      }
+    },
+    "contact_chip": {
+      "SAA01H": {
+        "raw": [
+          "SAA01H"
+        ],
+        "region": "Mindanao",
+        "tool_type": "SAAT05"
+      },
+      "SAA02H": {
+        "raw": [
+          "SAA02H"
+        ],
+        "region": "Visayas",
+        "tool_type": "SAAT05"
+      },
+      "SAA03H": {
+        "raw": [
+          "SAA03H"
+        ],
+        "region": "Mindanao",
+        "tool_type": "SAAT05"
+      },
+      "SAA04H": {
+        "raw": [
+          "SAA04H"
+        ],
+        "region": "Mindanao",
+        "tool_type": "SAAT05"
+      },
+      "SAA05H": {
+        "raw": [
+          "SAA05H"
+        ],
+        "region": "Mindanao",
+        "tool_type": "SAAT05"
+      },
+      "SAA06H": {
+        "raw": [
+          "SAA06H"
+        ],
+        "region": "Mindanao",
+        "tool_type": "SAAT05"
+      },
+      "SAA08H": {
+        "raw": [
+          "SAA08H"
+        ],
+        "region": "Mindanao",
+        "tool_type": "SAAT05"
+      },
+      "SAA09H": {
+        "raw": [
+          "SAA09H"
+        ],
+        "region": "Mindanao",
+        "tool_type": "SAAT05"
+      },
+      "SAA46H": {
+        "raw": [
+          "SAA46H"
+        ],
+        "region": "Mindanao",
+        "tool_type": "SAAT05"
+      },
+      "SAA07H": {
+        "raw": [
+          "SAA07H"
+        ],
+        "region": "Luzon",
+        "tool_type": "SAAT05"
+      },
+      "SAA11H": {
+        "raw": [
+          "SAA11H"
+        ],
+        "region": "Luzon",
+        "tool_type": "SAAT03"
+      },
+      "SAA13H": {
+        "raw": [
+          "SAA13H"
+        ],
+        "region": "Luzon",
+        "tool_type": "SAAT03"
+      },
+      "SAA14H": {
+        "raw": [
+          "SAA14H"
+        ],
+        "region": "Luzon",
+        "tool_type": "SAAT03"
+      },
+      "SAA18H": {
+        "raw": [
+          "SAA18H"
+        ],
+        "region": "Luzon",
+        "tool_type": "SAAT03"
+      },
+      "SAA23H": {
+        "raw": [
+          "SAA23H"
+        ],
+        "region": "Luzon",
+        "tool_type": "SAAT03"
+      },
+      "SAA26H": {
+        "raw": [
+          "SAA26H"
+        ],
+        "region": "Luzon",
+        "tool_type": "SAAT03"
+      },
+      "SAA27H": {
+        "raw": [
+          "SAA27H"
+        ],
+        "region": "Luzon",
+        "tool_type": "SAAT03"
+      },
+      "SAA34H": {
+        "raw": [
+          "SAA34H"
+        ],
+        "region": "Luzon",
+        "tool_type": "SAAT05"
+      },
+      "SAA36H": {
+        "raw": [
+          "SAA36H"
+        ],
+        "region": "Luzon",
+        "tool_type": "SAAT03"
+      },
+      "SAA37H": {
+        "raw": [
+          "SAA37H"
+        ],
+        "region": "Luzon",
+        "tool_type": "SAAT05"
+      },
+      "SAA38H": {
+        "raw": [
+          "SAA38H"
+        ],
+        "region": "Luzon",
+        "tool_type": "SAAT03"
+      },
+      "SAA51H": {
+        "raw": [
+          "SAA51H"
+        ],
+        "region": "Luzon",
+        "tool_type": "SAAT05"
+      },
+      "SAA52H": {
+        "raw": [
+          "SAA52H"
+        ],
+        "region": "CB Line",
+        "tool_type": "SAAT07"
+      },
+      "SAA53H": {
+        "raw": [
+          "SAA53H"
+        ],
+        "region": "Luzon",
+        "tool_type": "SAAT05"
+      },
+      "SAA54H": {
+        "raw": [
+          "SAA54H"
+        ],
+        "region": "Luzon",
+        "tool_type": "SAAT05"
+      },
+      "SAA58H": {
+        "raw": [
+          "SAA58H"
+        ],
+        "region": "Luzon",
+        "tool_type": "SAAT05"
+      },
+      "SAA59H": {
+        "raw": [
+          "SAA59H"
+        ],
+        "region": "Luzon",
+        "tool_type": "SAAT05"
+      },
+      "SAA60H": {
+        "raw": [
+          "SAA60H"
+        ],
+        "region": "Mindanao",
+        "tool_type": "SAAT05"
+      },
+      "SAA64H": {
+        "raw": [
+          "SAA64H"
+        ],
+        "region": "Luzon",
+        "tool_type": "SAAT05"
+      },
+      "SAA65H": {
+        "raw": [
+          "SAA65H"
+        ],
+        "region": "Mindanao",
+        "tool_type": "SAAT05"
+      },
+      "SAA66H": {
+        "raw": [
+          "SAA66H"
+        ],
+        "region": "Luzon",
+        "tool_type": "SAAT05"
+      },
+      "SAA67H": {
+        "raw": [
+          "SAA67H"
+        ],
+        "region": "Luzon",
+        "tool_type": "SAAT05"
+      },
+      "SAA68H": {
+        "raw": [
+          "SAA68H"
+        ],
+        "region": "Luzon",
+        "tool_type": "SAAT07"
+      },
+      "SAA69H": {
+        "raw": [
+          "SAA69H"
+        ],
+        "region": "Luzon",
+        "tool_type": "SAAT05"
+      },
+      "SAA70H": {
+        "raw": [
+          "SAA70H"
+        ],
+        "region": "Mindanao",
+        "tool_type": "SAAT07"
+      },
+      "SAA71H": {
+        "raw": [
+          "SAA71H"
+        ],
+        "region": "Luzon",
+        "tool_type": "SAAT07"
+      },
+      "SAA72H": {
+        "raw": [
+          "SAA72H"
+        ],
+        "region": "Luzon",
+        "tool_type": "SAAT05"
+      },
+      "SAA73H": {
+        "raw": [
+          "SAA73H"
+        ],
+        "region": "Luzon",
+        "tool_type": "SAAT05"
+      },
+      "SAA74H": {
+        "raw": [
+          "SAA74H"
+        ],
+        "region": "Luzon",
+        "tool_type": "SAAT05"
+      },
+      "SAA75H": {
+        "raw": [
+          "SAA75H"
+        ],
+        "region": "Mindanao",
+        "tool_type": "SAAT05"
+      },
+      "SAA76H": {
+        "raw": [
+          "SAA76H"
+        ],
+        "region": "Luzon",
+        "tool_type": "SAAT05"
+      },
+      "SAA77H": {
+        "raw": [
+          "SAA77H"
+        ],
+        "region": "Mindanao",
+        "tool_type": "SAAT05"
+      },
+      "SAA79H": {
+        "raw": [
+          "SAA79H"
+        ],
+        "region": "CB Line",
+        "tool_type": "SAAT07"
+      },
+      "SAA83H": {
+        "raw": [
+          "SAA83H"
+        ],
+        "region": "CB Line",
+        "tool_type": "SAAT07"
+      },
+      "SAA20H": {
+        "raw": [
+          "SAA20H"
+        ],
+        "region": "CB Line",
+        "tool_type": "SAAT07"
+      },
+      "SAA33H": {
+        "raw": [
+          "SAA33H"
+        ],
+        "region": "CB Line",
+        "tool_type": "SAAT05"
+      },
+      "SAA40H": {
+        "raw": [
+          "SAA40H"
+        ],
+        "region": "Mindanao",
+        "tool_type": "SAAT05"
+      },
+      "SAA41H": {
+        "raw": [
+          "SAA41H"
+        ],
+        "region": "CB Line",
+        "tool_type": "SAAT05"
+      },
+      "SAA42H": {
+        "raw": [
+          "SAA42H"
+        ],
+        "region": "CB Line",
+        "tool_type": "SAAT05"
+      },
+      "SAA43H": {
+        "raw": [
+          "SAA43H"
+        ],
+        "region": "CB Line",
+        "tool_type": "SAAT05"
+      },
+      "SAA44H": {
+        "raw": [
+          "SAA44H"
+        ],
+        "region": "CB Line",
+        "tool_type": "SAAT05"
+      },
+      "SAA45H": {
+        "raw": [
+          "SAA45H"
+        ],
+        "region": "CB Line",
+        "tool_type": "SAAT05"
+      },
+      "SAA47H": {
+        "raw": [
+          "SAA47H"
+        ],
+        "region": "CB Line",
+        "tool_type": "SAAT05"
+      },
+      "SAA48H": {
+        "raw": [
+          "SAA48H"
+        ],
+        "region": "CB Line",
+        "tool_type": "SAAT07"
+      },
+      "SAA49H": {
+        "raw": [
+          "SAA49H"
+        ],
+        "region": "CB Line",
+        "tool_type": "SAAT08"
+      },
+      "SAA50H": {
+        "raw": [
+          "SAA50H"
+        ],
+        "region": "CB Line",
+        "tool_type": "SAAT05"
+      },
+      "SAA55H": {
+        "raw": [
+          "SAA55H"
+        ],
+        "region": "CB Line",
+        "tool_type": "SAAT05"
+      },
+      "SAA56H": {
+        "raw": [
+          "SAA56H"
+        ],
+        "region": "CB Line",
+        "tool_type": "SAAT05"
+      },
+      "SAA57H": {
+        "raw": [
+          "SAA57H"
+        ],
+        "region": "CB Line",
+        "tool_type": "SAAT07"
+      },
+      "SAA78H": {
+        "raw": [
+          "SAA78H"
+        ],
+        "region": "CB Line",
+        "tool_type": "SAAT05"
+      },
+      "SAA80H": {
+        "raw": [
+          "SAA80H"
+        ],
+        "region": "CB Line",
+        "tool_type": "SAAT07"
+      },
+      "SAA81H": {
+        "raw": [
+          "SAA81H"
+        ],
+        "region": "CB Line",
+        "tool_type": "SAAT07"
+      },
+      "SAA82H": {
+        "raw": [
+          "SAA82H"
+        ],
+        "region": "CB Line",
+        "tool_type": "SAAT07"
+      },
+      "SAA32H": {
+        "raw": [
+          "SAA32H"
+        ],
+        "region": "NPI",
+        "tool_type": "SAAT05"
+      },
+      "SAA31H": {
+        "raw": [
+          "SAA31H"
+        ],
+        "region": "NPI",
+        "tool_type": "SAAT05"
+      }
+    },
+    "fit_ocap": {
+      "SAA52H": {
+        "raw": [
+          "SAA52H"
+        ]
+      },
+      "SAA65H": {
+        "raw": [
+          "SAA65H"
+        ]
+      },
+      "SAA77H": {
+        "raw": [
+          "SAA77H"
+        ]
+      },
+      "SAA46H": {
+        "raw": [
+          "SAA46H"
+        ]
+      },
+      "SAA73H": {
+        "raw": [
+          "SAA73H"
+        ]
+      },
+      "SAA42H": {
+        "raw": [
+          "SAA42H"
+        ]
+      },
+      "SAA54H": {
+        "raw": [
+          "SAA54H"
+        ]
+      },
+      "SAA64H": {
+        "raw": [
+          "SAA64H"
+        ]
+      },
+      "SAA03H": {
+        "raw": [
+          "SAA03H"
+        ]
+      },
+      "SAA50H": {
+        "raw": [
+          "SAA50H"
+        ]
+      },
+      "SAA68H": {
+        "raw": [
+          "SAA68H"
+        ]
+      },
+      "SAA44H": {
+        "raw": [
+          "SAA44H"
+        ]
+      },
+      "SAA47H": {
+        "raw": [
+          "SAA47H"
+        ]
+      },
+      "SAA41H": {
+        "raw": [
+          "SAA41H"
+        ]
+      },
+      "SAA55H": {
+        "raw": [
+          "SAA55H"
+        ]
+      },
+      "SAA59H": {
+        "raw": [
+          "SAA59H"
+        ]
+      },
+      "SAA71H": {
+        "raw": [
+          "SAA71H"
+        ]
+      },
+      "SAA82H": {
+        "raw": [
+          "SAA82H"
+        ]
+      },
+      "SAA83H": {
+        "raw": [
+          "SAA83H"
+        ]
+      },
+      "SAA75H": {
+        "raw": [
+          "SAA75H"
+        ]
+      },
+      "SAA53H": {
+        "raw": [
+          "SAA53H"
+        ]
+      },
+      "SAA70H": {
+        "raw": [
+          "SAA70H"
+        ]
+      },
+      "SAA09H": {
+        "raw": [
+          "SAA09H"
+        ]
+      },
+      "SAA08H": {
+        "raw": [
+          "SAA08H"
+        ]
+      },
+      "SAA33H": {
+        "raw": [
+          "SAA33H"
+        ]
+      },
+      "SAA57H": {
+        "raw": [
+          "SAA57H"
+        ]
+      },
+      "SAA74H": {
+        "raw": [
+          "SAA74H"
+        ]
+      },
+      "SAA48H": {
+        "raw": [
+          "SAA48H"
+        ]
+      }
+    },
+    "weekly_ooc": {
+      "SAA45H": {
+        "raw": [
+          "SAA45H",
+          "SAA45H-"
+        ]
+      },
+      "SAA54H": {
+        "raw": [
+          "SAA54H"
+        ]
+      },
+      "SAA83H": {
+        "raw": [
+          "SAA83H"
+        ]
+      },
+      "SAA33H": {
+        "raw": [
+          "SAA33H"
+        ]
+      },
+      "SAA07H": {
+        "raw": [
+          "SAA07H"
+        ]
+      },
+      "SAA44H": {
+        "raw": [
+          "SAA44H"
+        ]
+      },
+      "SAA53H": {
+        "raw": [
+          "SAA53H",
+          "SAA53H-"
+        ]
+      },
+      "SAA66H": {
+        "raw": [
+          "SAA66H",
+          "SA66H-"
+        ]
+      },
+      "SAA77H": {
+        "raw": [
+          "SAA77H",
+          "SAA77H-"
+        ]
+      },
+      "SAA01H": {
+        "raw": [
+          "SAA01H"
+        ]
+      },
+      "SAA74H": {
+        "raw": [
+          "SAA74H"
+        ]
+      },
+      "SAA78H": {
+        "raw": [
+          "SAA78H"
+        ]
+      },
+      "SAA76H": {
+        "raw": [
+          "SAA76H"
+        ]
+      },
+      "SAA65H": {
+        "raw": [
+          "SAA65H"
+        ]
+      },
+      "SAA03H": {
+        "raw": [
+          "SAA03H"
+        ]
+      },
+      "SAA05H": {
+        "raw": [
+          "SAA05H"
+        ]
+      },
+      "SAA55H": {
+        "raw": [
+          "SAA55H"
+        ]
+      },
+      "SAA75H": {
+        "raw": [
+          "SAA75H"
+        ]
+      },
+      "SAA51H": {
+        "raw": [
+          "SAA51H",
+          "SAA51H-"
+        ]
+      },
+      "SAA08H": {
+        "raw": [
+          "SAA08H",
+          "SAA08H-"
+        ]
+      },
+      "SAA72H": {
+        "raw": [
+          "SAA72H",
+          "SAA72H-"
+        ]
+      },
+      "SAA64H": {
+        "raw": [
+          "SAA64H"
+        ]
+      },
+      "SAA46H": {
+        "raw": [
+          "SAA46H",
+          "SAA46H-"
+        ]
+      },
+      "SAA47H": {
+        "raw": [
+          "SAA47H"
+        ]
+      },
+      "SAA50H": {
+        "raw": [
+          "SAA50H"
+        ]
+      },
+      "SAA59H": {
+        "raw": [
+          "SAA59H"
+        ]
+      },
+      "SAA73H": {
+        "raw": [
+          "SAA73H"
+        ]
+      },
+      "SAA52H": {
+        "raw": [
+          "SAA52H"
+        ]
+      },
+      "SAA60H": {
+        "raw": [
+          "SAA60H"
+        ]
+      },
+      "SAA70H": {
+        "raw": [
+          "SAA70H"
+        ]
+      },
+      "SAA09H": {
+        "raw": [
+          "SAA09H"
+        ]
+      },
+      "SAA79H": {
+        "raw": [
+          "SAA79H"
+        ]
+      },
+      "SAA34H": {
+        "raw": [
+          "SAA34H",
+          "SAA34H-"
+        ]
+      },
+      "SAA82H": {
+        "raw": [
+          "SAA82H"
+        ]
+      },
+      "SAA04H": {
+        "raw": [
+          "SAA04H"
+        ]
+      },
+      "SAA42H": {
+        "raw": [
+          "SAA42H"
+        ]
+      },
+      "SAA41H": {
+        "raw": [
+          "SAA41H"
+        ]
+      },
+      "SAA68H": {
+        "raw": [
+          "SAA68H"
+        ]
+      },
+      "SAA57H": {
+        "raw": [
+          "SAA57H"
+        ]
+      },
+      "SAA71H": {
+        "raw": [
+          "SAA71H"
+        ]
+      },
+      "SAA48H": {
+        "raw": [
+          "SAA48H"
+        ]
+      }
+    }
+  },
+  "tool_alias_hits": {
+    "SAA677H": "SAA77H",
+    "SA72H": "SAA72H",
+    "SASA33": "SAA33H",
+    "SA53H": "SAA53H",
+    "SA79H": "SAA79H",
+    "SAA45H-": "SAA45H",
+    "SAA72H-": "SAA72H",
+    "SAA08H-": "SAA08H",
+    "SAA34H-": "SAA34H",
+    "SAA77H-": "SAA77H",
+    "SAA46H-": "SAA46H",
+    "SAA53H-": "SAA53H",
+    "SAA51H-": "SAA51H",
+    "SA66H-": "SAA66H"
+  },
+  "counts": {
+    "endorsements.csv": 3976,
+    "endorsements.csv rows with tool_code": 3975,
+    "pm_status.csv": 667,
+    "pm_status.csv sheets": 16,
+    "contact_chip.csv": 112,
+    "low_cpk.csv": 0,
+    "circuit_burn.csv": 0,
+    "fit_ocap.csv": 68,
+    "weekly_ooc.csv": 694
+  }
+}

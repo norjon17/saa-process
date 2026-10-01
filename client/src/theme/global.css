@@ -1,0 +1,108 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(33, 104, 253, 0.3);
+  border-radius: 4px;
+}
+
+/* Gradient text used by the brand title, clock and hero headings. */
+.saa-gradient-text {
+  background: var(--saa-grad);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: saaTitleShimmer 6s ease infinite;
+}
+@keyframes saaTitleShimmer {
+  0% {
+    background-position: 0% 0;
+  }
+  50% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0% 0;
+  }
+}
+@keyframes saaPulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.45;
+  }
+}
+
+/* Surfaces that mirror the original --surface / --surface2 */
+.saa-surface {
+  background: var(--saa-surface);
+  border: 1px solid var(--saa-border);
+}
+.saa-surface2 {
+  background: var(--saa-surface2);
+}
+
+/* Black "NONE" rows */
+tr[data-none-row] td {
+  background: var(--saa-none-row) !important;
+  color: #d1d5db !important;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-align: center;
+}
+tr[data-none-row] td:first-child {
+  color: #60a5fa !important;
+  font-weight: 800;
+}
+
+/* Inline editors inside tables */
+.saa-cell-input {
+  width: 100%;
+  border: none;
+  background: transparent;
+  color: var(--mantine-color-text);
+  font: inherit;
+  padding: 3px 4px;
+  border-radius: 5px;
+  transition: 0.1s;
+  min-height: 26px;
+  line-height: 1.5;
+}
+.saa-cell-input:focus {
+  outline: 2px solid rgba(33, 104, 253, 0.5);
+  background: var(--saa-surface);
+  box-shadow: 0 0 0 4px rgba(33, 104, 253, 0.08);
+}
+textarea.saa-cell-input {
+  resize: none;
+  overflow: hidden;
+  white-space: pre-wrap;
+  word-break: break-word;
+  display: block;
+}
+
+@media print {
+  .saa-no-print {
+    display: none !important;
+  }
+  body {
+    background: #fff !important;
+  }
+}

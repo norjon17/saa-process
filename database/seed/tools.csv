@@ -1,0 +1,66 @@
+code,region,tool_type,ee_name,sort_order,sources
+SAA01H,Mindanao,SAAT05,Ralf Anthony David,1,contact_chip|rev21|pm_status|endorsement|weekly_ooc
+SAA02H,Visayas,SAAT05,,2,contact_chip
+SAA03H,Mindanao,SAAT05,Vince,3,contact_chip|rev21|pm_status|fit_ocap|weekly_ooc
+SAA04H,Mindanao,SAAT05,Ralf Anthony David,4,contact_chip|rev21|pm_status|endorsement|weekly_ooc
+SAA05H,Mindanao,SAAT05,Ralf Anthony David,5,contact_chip|rev21|pm_status|endorsement|weekly_ooc
+SAA06H,Mindanao,SAAT05,,6,contact_chip
+SAA07H,Luzon,SAAT05,John Joseph Mingo,7,contact_chip|rev21|pm_status|endorsement|weekly_ooc
+SAA08H,Mindanao,SAAT05,Ralf Anthony David,8,contact_chip|rev21|pm_status|endorsement|fit_ocap|weekly_ooc
+SAA09H,Mindanao,SAAT05,Noel,9,contact_chip|rev21|pm_status|endorsement|fit_ocap|weekly_ooc
+SAA11H,Luzon,SAAT03,,11,contact_chip
+SAA13H,Luzon,SAAT03,,13,contact_chip
+SAA14H,Luzon,SAAT03,,14,contact_chip
+SAA18H,Luzon,SAAT03,,18,contact_chip
+SAA20H,CB Line,SAAT07,Ralf Anthony David,20,contact_chip|rev21|pm_status|endorsement
+SAA23H,Luzon,SAAT03,,23,contact_chip
+SAA26H,Luzon,SAAT03,,26,contact_chip
+SAA27H,Luzon,SAAT03,,27,contact_chip
+SAA31H,NPI,SAAT05,,31,contact_chip
+SAA32H,NPI,SAAT05,,32,contact_chip
+SAA33H,CB Line,SAAT05,John Joseph Mingo,33,contact_chip|rev21|pm_status|endorsement|fit_ocap|weekly_ooc
+SAA34H,Luzon,SAAT05,,34,contact_chip|rev21|weekly_ooc
+SAA36H,Luzon,SAAT03,,36,contact_chip
+SAA37H,Luzon,SAAT05,,37,contact_chip
+SAA38H,Luzon,SAAT03,,38,contact_chip
+SAA40H,Mindanao,SAAT05,,40,contact_chip|rev21
+SAA41H,CB Line,SAAT05,Ramonchito Juanillas,41,contact_chip|rev21|pm_status|fit_ocap|weekly_ooc
+SAA42H,CB Line,SAAT05,Ralf Anthony David,42,contact_chip|rev21|pm_status|endorsement|fit_ocap|weekly_ooc
+SAA43H,CB Line,SAAT05,,43,contact_chip|rev21|pm_status
+SAA44H,CB Line,SAAT05,Ralf Anthony David,44,contact_chip|rev21|pm_status|endorsement|fit_ocap|weekly_ooc
+SAA45H,CB Line,SAAT05,John Joseph Mingo,45,contact_chip|rev21|pm_status|endorsement|weekly_ooc
+SAA46H,Mindanao,SAAT05,,46,contact_chip|rev21|pm_status|fit_ocap|weekly_ooc
+SAA47H,CB Line,SAAT05,Glenn Rubis Jr.,47,contact_chip|rev21|pm_status|endorsement|fit_ocap|weekly_ooc
+SAA48H,CB Line,SAAT07,John Joseph Mingo,48,contact_chip|rev21|pm_status|endorsement|fit_ocap|weekly_ooc
+SAA49H,CB Line,SAAT08,,49,contact_chip|rev21|pm_status|endorsement
+SAA50H,CB Line,SAAT05,John Joseph Mingo,50,contact_chip|rev21|pm_status|fit_ocap|weekly_ooc
+SAA51H,Luzon,SAAT05,Ralf Anthony David,51,contact_chip|rev21|pm_status|endorsement|weekly_ooc
+SAA52H,CB Line,SAAT07,Michael Monterey Javier,52,contact_chip|rev21|pm_status|endorsement|fit_ocap|weekly_ooc
+SAA53H,Luzon,SAAT05,Ralf Anthony David,53,contact_chip|rev21|pm_status|endorsement|fit_ocap|weekly_ooc
+SAA54H,Luzon,SAAT05,Glenn Rubis Jr.,54,contact_chip|rev21|pm_status|endorsement|fit_ocap|weekly_ooc
+SAA55H,CB Line,SAAT05,John Joseph Mingo,55,contact_chip|rev21|pm_status|endorsement|fit_ocap|weekly_ooc
+SAA56H,CB Line,SAAT05,,56,contact_chip|rev21
+SAA57H,CB Line,SAAT07,Ralf Anthony David,57,contact_chip|rev21|pm_status|endorsement|fit_ocap|weekly_ooc
+SAA58H,Luzon,SAAT05,,58,contact_chip|rev21
+SAA59H,Luzon,SAAT05,Ralf Anthony David,59,contact_chip|rev21|pm_status|endorsement|fit_ocap|weekly_ooc
+SAA60H,Mindanao,SAAT05,Ralf Anthony David,60,contact_chip|rev21|pm_status|endorsement|weekly_ooc
+SAA64H,Luzon,SAAT05,Ralf Anthony David,64,contact_chip|rev21|pm_status|endorsement|fit_ocap|weekly_ooc
+SAA65H,Mindanao,SAAT05,Ramonchito Juanillas,65,contact_chip|rev21|pm_status|endorsement|fit_ocap|weekly_ooc
+SAA66H,Luzon,SAAT05,John Joseph Mingo,66,contact_chip|rev21|pm_status|endorsement|weekly_ooc
+SAA67H,Luzon,SAAT05,,67,contact_chip|rev21
+SAA68H,Luzon,SAAT07,Ralf Anthony David,68,contact_chip|pm_status|endorsement|fit_ocap|weekly_ooc
+SAA69H,Luzon,SAAT05,,69,contact_chip
+SAA70H,Mindanao,SAAT07,Ralf Anthony David,70,contact_chip|rev21|pm_status|endorsement|fit_ocap|weekly_ooc
+SAA71H,Luzon,SAAT07,John Joseph Mingo,71,contact_chip|pm_status|endorsement|fit_ocap|weekly_ooc
+SAA72H,Luzon,SAAT05,Glenn Rubis Jr.,72,contact_chip|rev21|pm_status|endorsement|weekly_ooc
+SAA73H,Luzon,SAAT05,John Joseph Mingo,73,contact_chip|rev21|pm_status|endorsement|fit_ocap|weekly_ooc
+SAA74H,Luzon,SAAT05,Glenn Rubis Jr.,74,contact_chip|rev21|pm_status|endorsement|fit_ocap|weekly_ooc
+SAA75H,Mindanao,SAAT05,Ralf Anthony David,75,contact_chip|rev21|pm_status|endorsement|fit_ocap|weekly_ooc
+SAA76H,Luzon,SAAT05,Ralf Anthony David,76,contact_chip|rev21|pm_status|endorsement|weekly_ooc
+SAA77H,Mindanao,SAAT05,Ralf Anthony David,77,contact_chip|rev21|pm_status|endorsement|fit_ocap|weekly_ooc
+SAA78H,CB Line,SAAT05,,78,contact_chip|rev21|pm_status|endorsement|weekly_ooc
+SAA79H,CB Line,SAAT07,John Joseph Mingo,79,contact_chip|rev21|pm_status|endorsement|weekly_ooc
+SAA80H,CB Line,SAAT07,,80,contact_chip
+SAA81H,CB Line,SAAT07,,81,contact_chip
+SAA82H,CB Line,SAAT07,Ralf Anthony David,82,contact_chip|rev21|pm_status|endorsement|fit_ocap|weekly_ooc
+SAA83H,CB Line,SAAT07,Ralf Anthony David,83,contact_chip|rev21|pm_status|endorsement|fit_ocap|weekly_ooc

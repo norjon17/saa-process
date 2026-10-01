@@ -1,0 +1,238 @@
+{
+  "unmapped": {
+    "tools": {},
+    "people": {
+      "p": 1
+    },
+    "categories": {},
+    "contact_chip_values": {},
+    "daily_cells": {}
+  },
+  "warnings": [
+    "Endorsement!row 268: missing date",
+    "Endorsement!row 268: missing shift",
+    "Endorsement!row 419: missing date",
+    "Endorsement!row 419: missing shift",
+    "Endorsement!row 1689: row has an issue but no tool -> tool_code blank"
+  ],
+  "decisions": [
+    "Endorsement: rows with neither Tool nor Issue are skipped; a row with an Issue but no Tool is kept with blank tool_code; Remarks DONE/Done -> done, Ongoing -> ongoing, blank -> open"
+  ],
+  "tools": {
+    "endorsement": {
+      "SAA04H": {
+        "raw": [
+          "SAA04H",
+          "SAA4H"
+        ]
+      },
+      "SAA01H": {
+        "raw": [
+          "SAA01H"
+        ]
+      },
+      "SAA76H": {
+        "raw": [
+          "SAA76H",
+          "SAA76"
+        ]
+      },
+      "SAA48H": {
+        "raw": [
+          "SAA48H"
+        ]
+      },
+      "SAA51H": {
+        "raw": [
+          "SAA51H"
+        ]
+      },
+      "SAA54H": {
+        "raw": [
+          "SAA54H",
+          "SAA 54H"
+        ]
+      },
+      "SAA79H": {
+        "raw": [
+          "SAA79H",
+          "SA79H"
+        ]
+      },
+      "SAA33H": {
+        "raw": [
+          "SAA33H",
+          "SAA33",
+          "SASA33"
+        ]
+      },
+      "SAA68H": {
+        "raw": [
+          "SAA68H"
+        ]
+      },
+      "SAA59H": {
+        "raw": [
+          "SAA59H"
+        ]
+      },
+      "SAA52H": {
+        "raw": [
+          "SAA52H"
+        ]
+      },
+      "SAA60H": {
+        "raw": [
+          "SAA60H"
+        ]
+      },
+      "SAA74H": {
+        "raw": [
+          "SAA74H"
+        ]
+      },
+      "SAA05H": {
+        "raw": [
+          "SAA05H",
+          "SAA5H",
+          "SAA05"
+        ]
+      },
+      "SAA82H": {
+        "raw": [
+          "SAA82H"
+        ]
+      },
+      "SAA45H": {
+        "raw": [
+          "SAA45H"
+        ]
+      },
+      "SAA53H": {
+        "raw": [
+          "SAA53H",
+          "SA53H"
+        ]
+      },
+      "SAA64H": {
+        "raw": [
+          "SAA64H"
+        ]
+      },
+      "SAA66H": {
+        "raw": [
+          "SAA66H"
+        ]
+      },
+      "SAA42H": {
+        "raw": [
+          "SAA42H"
+        ]
+      },
+      "SAA07H": {
+        "raw": [
+          "SAA07H"
+        ]
+      },
+      "SAA20H": {
+        "raw": [
+          "SAA20H"
+        ]
+      },
+      "SAA44H": {
+        "raw": [
+          "SAA44H"
+        ]
+      },
+      "SAA57H": {
+        "raw": [
+          "SAA57H"
+        ]
+      },
+      "SAA08H": {
+        "raw": [
+          "SAA08H"
+        ]
+      },
+      "SAA83H": {
+        "raw": [
+          "SAA83H"
+        ]
+      },
+      "SAA55H": {
+        "raw": [
+          "SAA55H"
+        ]
+      },
+      "SAA70H": {
+        "raw": [
+          "SAA70H"
+        ]
+      },
+      "SAA77H": {
+        "raw": [
+          "SAA77H",
+          "SAA677H"
+        ]
+      },
+      "SAA47H": {
+        "raw": [
+          "SAA47H"
+        ]
+      },
+      "SAA65H": {
+        "raw": [
+          "SAA65H"
+        ]
+      },
+      "SAA71H": {
+        "raw": [
+          "SAA71H"
+        ]
+      },
+      "SAA09H": {
+        "raw": [
+          "SAA09H"
+        ]
+      },
+      "SAA72H": {
+        "raw": [
+          "SAA72H",
+          "SA72H"
+        ]
+      },
+      "SAA75H": {
+        "raw": [
+          "SAA75H"
+        ]
+      },
+      "SAA73H": {
+        "raw": [
+          "SAA73H",
+          "SAA73"
+        ]
+      },
+      "SAA49H": {
+        "raw": [
+          "SAA49H"
+        ]
+      },
+      "SAA78H": {
+        "raw": [
+          "SAA78H"
+        ]
+      }
+    }
+  },
+  "tool_alias_hits": {
+    "SAA677H": "SAA77H",
+    "SA72H": "SAA72H",
+    "SASA33": "SAA33H",
+    "SA53H": "SAA53H",
+    "SA79H": "SAA79H"
+  },
+  "counts": {
+    "endorsements.csv": 3976,
+    "endorsements.csv rows with tool_code": 3975
+  }
+}

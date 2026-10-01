@@ -1,0 +1,91 @@
+/* Phone card layout of DataTable (one card per row, label-above-value fields in two columns). */
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.sortBar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.card {
+  background: var(--saa-surface);
+  border: 1px solid var(--saa-border);
+  border-radius: 10px;
+  padding: 8px 10px 10px;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+}
+.card[data-selected] {
+  background: var(--saa-kpi-bg);
+  border-color: var(--mantine-color-brand-4);
+}
+.cardHead {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 26px;
+}
+.cardTitle {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 10px;
+  font-weight: 800;
+  font-size: 0.86rem;
+}
+.cardBody {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px 12px;
+  margin-top: 6px;
+}
+.field {
+  min-width: 0;
+}
+.fieldFull {
+  min-width: 0;
+  grid-column: 1 / -1;
+}
+.label {
+  font-size: 0.58rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--saa-text3);
+  margin-bottom: 2px;
+}
+.value {
+  font-size: 0.82rem;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+/* Inline editors are borderless inside table cells; give them a visible box inside cards. */
+.value :global(.saa-cell-input),
+.cardTitle :global(.saa-cell-input) {
+  border: 1px solid var(--saa-border);
+  border-radius: 6px;
+  padding: 3px 6px;
+  min-height: 28px;
+}
+
+/* Black NONE rows keep their look as cards. */
+.card[data-none-row] {
+  background: var(--saa-none-row);
+  border-color: var(--saa-none-row);
+  color: #d1d5db;
+}
+.card[data-none-row] .cardTitle {
+  color: #60a5fa;
+}
+.card[data-none-row] .label {
+  color: #9ca3af;
+}
+/* Card editors (Select / Number / Date use Mantine's default variant): same transparent fill as the text inputs,
+   so mixed cards look even in dark mode. */
+.value :global(.mantine-Input-input),
+.cardTitle :global(.mantine-Input-input) {
+  background: transparent;
+}

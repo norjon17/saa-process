@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Low Yield",
+    "sectionKey": "s1",
+    "sortOrder": 1
+  },
+  {
+    "name": "High Offset",
+    "sectionKey": "s1",
+    "sortOrder": 2
+  },
+  {
+    "name": "Parametric Issue",
+    "sectionKey": "s1",
+    "sortOrder": 3
+  },
+  {
+    "name": "Mechanical Issue",
+    "sectionKey": "s2",
+    "sortOrder": 4
+  },
+  {
+    "name": "Conversion",
+    "sectionKey": "s3",
+    "sortOrder": 5
+  },
+  {
+    "name": "New Product",
+    "sectionKey": "s3",
+    "sortOrder": 6
+  },
+  {
+    "name": "Optimization",
+    "sectionKey": "s4",
+    "sortOrder": 7
+  },
+  {
+    "name": "PM",
+    "sectionKey": "s5",
+    "sortOrder": 8
+  },
+  {
+    "name": "Mean Check Confirmation",
+    "sectionKey": "s6",
+    "sortOrder": 9
+  },
+  {
+    "name": "Static SPC OOC",
+    "sectionKey": "s6",
+    "sortOrder": 10
+  }
+]

@@ -1,0 +1,28 @@
+/* Phone card helpers for DataTable cards (admin pages + CrudTablePage minor tabs). */
+
+/* Card heading content (phone-only title column). */
+.title {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 8px;
+  min-width: 0;
+}
+.titleCode {
+  font-family: var(--mantine-font-family-monospace);
+  font-size: 0.78rem;
+  font-weight: 800;
+  padding: 1px 6px;
+  border-radius: 5px;
+  background: var(--saa-surface2);
+  border: 1px solid var(--saa-border);
+}
+.titleText {
+  font-weight: 800;
+  overflow-wrap: anywhere;
+}
+.titleMuted {
+  font-weight: 600;
+  font-size: 0.74rem;
+  color: var(--saa-text3);
+}

@@ -1,0 +1,212 @@
+[
+  {
+    "idNo": "1111",
+    "name": "Admin",
+    "role": "admin",
+    "aliases": []
+  },
+  {
+    "idNo": "9000",
+    "name": "Evalice Villacampa",
+    "role": "admin",
+    "aliases": [
+      "evalice"
+    ]
+  },
+  {
+    "idNo": "9001",
+    "name": "Mary Rose Alis",
+    "role": "admin",
+    "aliases": [
+      "mary rose",
+      "rose"
+    ]
+  },
+  {
+    "idNo": "9002",
+    "name": "Eva",
+    "role": "tech",
+    "aliases": [
+      "eva"
+    ]
+  },
+  {
+    "idNo": "9003",
+    "name": "Dea",
+    "role": "tech",
+    "aliases": [
+      "dea"
+    ]
+  },
+  {
+    "idNo": "9004",
+    "name": "KC",
+    "role": "tech",
+    "aliases": [
+      "kc",
+      "k.c"
+    ]
+  },
+  {
+    "idNo": "9005",
+    "name": "Sam",
+    "role": "tech",
+    "aliases": [
+      "sam"
+    ]
+  },
+  {
+    "idNo": "9006",
+    "name": "Coleen",
+    "role": "tech",
+    "aliases": [
+      "coleen",
+      "collen"
+    ]
+  },
+  {
+    "idNo": "9007",
+    "name": "Camille",
+    "role": "tech",
+    "aliases": [
+      "camille",
+      "camiile"
+    ]
+  },
+  {
+    "idNo": "9008",
+    "name": "Fil",
+    "role": "tech",
+    "aliases": [
+      "fil"
+    ]
+  },
+  {
+    "idNo": "9009",
+    "name": "Vinz",
+    "role": "tech",
+    "aliases": [
+      "vinz"
+    ]
+  },
+  {
+    "idNo": "9010",
+    "name": "Rona",
+    "role": "tech",
+    "aliases": [
+      "rona"
+    ]
+  },
+  {
+    "idNo": "9011",
+    "name": "Ralf Anthony David",
+    "role": "ee",
+    "aliases": [
+      "ralf anthony david",
+      "ralf",
+      "raf"
+    ]
+  },
+  {
+    "idNo": "9012",
+    "name": "John Joseph Mingo",
+    "role": "ee",
+    "aliases": [
+      "john joseph mingo",
+      "jj"
+    ]
+  },
+  {
+    "idNo": "9013",
+    "name": "Hileton Mago",
+    "role": "ee",
+    "aliases": [
+      "hileton mago",
+      "hileton"
+    ]
+  },
+  {
+    "idNo": "9014",
+    "name": "Michael Monterey Javier",
+    "role": "ee",
+    "aliases": [
+      "michael monterey javier",
+      "michael"
+    ]
+  },
+  {
+    "idNo": "9015",
+    "name": "Ramonchito Juanillas",
+    "role": "ee",
+    "aliases": [
+      "ramonchito juanillas",
+      "ramonchito",
+      "chito"
+    ]
+  },
+  {
+    "idNo": "9016",
+    "name": "Glenn Rubis Jr.",
+    "role": "ee",
+    "aliases": [
+      "glenn rubis jr.",
+      "glenn rubis jr",
+      "glenn rubis",
+      "glenn"
+    ]
+  },
+  {
+    "idNo": "9017",
+    "name": "Jay Bolaños",
+    "role": "ee",
+    "aliases": [
+      "jay bolaños",
+      "jay bolanos",
+      "jay bola�os",
+      "jay"
+    ]
+  },
+  {
+    "idNo": "9018",
+    "name": "Arnel Galve",
+    "role": "ee",
+    "aliases": [
+      "arnel galve",
+      "arnel"
+    ]
+  },
+  {
+    "idNo": "9019",
+    "name": "Joshua Natanauan",
+    "role": "ee",
+    "aliases": [
+      "joshua natanauan",
+      "joshua"
+    ]
+  },
+  {
+    "idNo": "9020",
+    "name": "Vince",
+    "role": "ee",
+    "aliases": [
+      "vince"
+    ]
+  },
+  {
+    "idNo": "9021",
+    "name": "Noel",
+    "role": "ee",
+    "aliases": [
+      "noel"
+    ]
+  },
+  {
+    "idNo": "9022",
+    "name": "Antonio (Ton)",
+    "role": "ee",
+    "aliases": [
+      "antonio",
+      "ton"
+    ]
+  }
+]

@@ -1,0 +1,400 @@
+/* ---- KPI tile ---- */
+.kpi {
+  background: var(--saa-surface);
+  border-radius: 12px;
+  border: 1px solid var(--saa-border);
+  padding: 12px 8px 10px;
+  text-align: center;
+  box-shadow: var(--mantine-shadow-sm);
+  position: relative;
+  overflow: hidden;
+  transition:
+    transform 0.22s cubic-bezier(0.34, 1.56, 0.64, 1),
+    box-shadow 0.22s ease,
+    border-color 0.22s ease;
+  cursor: default;
+}
+.kpi[role='button'] {
+  cursor: pointer;
+}
+.kpi::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--kpi-bar);
+  transition: height 0.22s ease;
+}
+.kpi:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: var(--mantine-shadow-lg);
+  border-color: color-mix(in srgb, var(--kpi-base) 40%, transparent);
+}
+.kpi:hover::before {
+  height: 5px;
+}
+.kpi[data-active] {
+  border-color: var(--kpi-base);
+  background: color-mix(in srgb, var(--kpi-base) 9%, var(--saa-surface));
+  transform: translateY(-2px);
+  box-shadow:
+    var(--mantine-shadow-md),
+    0 0 0 1px var(--kpi-base);
+}
+.kpi[data-active]::before {
+  height: 5px;
+}
+.kpi[data-active] .kpiIcon {
+  color: #fff;
+  background: var(--kpi-bar);
+}
+.kpiIcon {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  margin: 0 auto 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--kpi-base);
+  background: color-mix(in srgb, var(--kpi-base) 10%, transparent);
+  transition: transform 0.22s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.kpi:hover .kpiIcon {
+  transform: scale(1.18);
+}
+.kpiLabel {
+  font-size: 0.56rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--saa-text3);
+  margin-bottom: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.kpiValue {
+  font-size: 1.5rem;
+  font-weight: 900;
+  letter-spacing: -1px;
+  color: var(--kpi-color);
+  transition: transform 0.22s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.kpi:hover .kpiValue {
+  transform: scale(1.08);
+}
+.kpiSub {
+  font-size: 0.56rem;
+  font-weight: 600;
+  color: var(--saa-text3);
+  margin-top: 3px;
+}
+/* Phones: dense tile (count + label only). No hover lift — on touch :hover sticks after a tap. */
+@media (max-width: 47.99em) {
+  .kpi[data-compact] {
+    padding: 8px 4px 6px;
+    border-radius: 10px;
+    transform: none;
+  }
+  .kpi[data-compact]:hover {
+    transform: none;
+    box-shadow: var(--mantine-shadow-sm);
+  }
+  .kpi[data-compact][data-active] {
+    transform: none;
+    box-shadow: 0 0 0 1px var(--kpi-base);
+    background: color-mix(in srgb, var(--kpi-base) 14%, var(--saa-surface));
+  }
+  .kpi[data-compact] .kpiIcon,
+  .kpi[data-compact] .kpiSub {
+    display: none;
+  }
+  .kpi[data-compact] .kpiLabel {
+    font-size: 0.5rem;
+    letter-spacing: 0.3px;
+    margin-bottom: 1px;
+  }
+  .kpi[data-compact][data-active] .kpiLabel {
+    color: var(--kpi-color);
+  }
+  .kpi[data-compact] .kpiValue {
+    font-size: 1.15rem;
+    line-height: 1.15;
+    letter-spacing: -0.5px;
+  }
+  .kpi[data-compact]:hover .kpiValue {
+    transform: none;
+  }
+}
+
+/* ---- Section card ---- */
+.section {
+  background: var(--saa-surface);
+  border-radius: 14px;
+  border: 1px solid var(--saa-border);
+  box-shadow: var(--mantine-shadow-sm);
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+}
+.section:hover {
+  box-shadow: var(--mantine-shadow-md);
+}
+.sectionHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  gap: 10px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--saa-border);
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--sec-base) 7%, transparent), transparent);
+}
+.sectionHead::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--sec-bar);
+  border-radius: 0 2px 2px 0;
+}
+.sectionLeft {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+  z-index: 1;
+}
+.sectionLogo {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--sec-base);
+  background: color-mix(in srgb, var(--sec-base) 10%, transparent);
+  border: 1px solid color-mix(in srgb, var(--sec-base) 20%, transparent);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.sectionName {
+  font-size: 0.84rem;
+  font-weight: 900;
+  letter-spacing: -0.2px;
+  line-height: 1.2;
+  color: var(--sec-text);
+}
+.sectionMeta {
+  font-size: 0.58rem;
+  font-weight: 600;
+  color: var(--saa-text3);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-top: 1px;
+}
+.sectionBtns {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+}
+/* Phones: tighter header, action buttons as an even 2-column grid under the title. */
+@media (max-width: 47.99em) {
+  .sectionHead {
+    padding: 8px 10px 10px 14px;
+    gap: 8px;
+  }
+  .sectionLeft {
+    gap: 10px;
+    min-width: 0;
+  }
+  .sectionLogo {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+  }
+  .sectionBtns {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 6px;
+  }
+}
+
+/* ---- Hero (meancheck) ---- */
+.hero {
+  background: var(--saa-header-bg);
+  padding: 18px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  border-radius: 14px 14px 0 0;
+  color: #fff;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.022) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.022) 1px, transparent 1px);
+  background-size: 52px 52px;
+  mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black, transparent);
+  pointer-events: none;
+}
+.heroGlow {
+  position: absolute;
+  width: 600px;
+  height: 350px;
+  background: radial-gradient(ellipse, rgba(33, 104, 253, 0.2) 0%, rgba(58, 228, 201, 0.08) 55%, transparent 100%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+.heroTitle {
+  font-size: 1.25rem;
+  font-weight: 900;
+  letter-spacing: -0.4px;
+  position: relative;
+  z-index: 1;
+}
+.heroSub {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.68rem;
+  font-weight: 500;
+  margin-top: 3px;
+  position: relative;
+  z-index: 1;
+}
+
+/* ---- Pills ---- */
+.pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.64rem;
+  font-weight: 800;
+  padding: 3px 9px;
+  border-radius: 6px;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
+  line-height: 1.3;
+}
+
+/* ---- Lightbox ---- */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.93);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  overscroll-behavior: contain;
+  /* horizontal swipes are ours (prev/next); pinch-zoom and vertical panning stay with the browser */
+  touch-action: pan-y pinch-zoom;
+}
+.lightboxImg {
+  max-width: 92vw;
+  max-height: 88vh;
+  border-radius: 10px;
+  box-shadow: 0 8px 60px rgba(0, 0, 0, 0.7);
+  object-fit: contain;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+.lightboxBtn {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #fff;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.1rem;
+  -webkit-tap-highlight-color: transparent;
+}
+.lightboxBtn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+.lightboxBtn:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+.lightboxClose {
+  top: 18px;
+  right: 18px;
+  background: rgba(198, 40, 40, 0.92);
+}
+.lightboxClose:hover {
+  background: #b71c1c;
+}
+.lightboxPrev,
+.lightboxNext {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.lightboxPrev {
+  left: 18px;
+}
+.lightboxNext {
+  right: 18px;
+}
+.lightboxCounter {
+  position: absolute;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.65rem;
+  font-weight: 700;
+}
+/* Phones: image uses the full width; prev/next move to a bottom bar (thumb reach) beside the counter. */
+@media (max-width: 47.99em) {
+  .lightboxImg {
+    max-width: 100vw;
+    max-height: calc(100dvh - 150px);
+    border-radius: 6px;
+  }
+  .lightboxBtn {
+    width: 46px;
+    height: 46px;
+  }
+  .lightboxClose {
+    top: max(12px, env(safe-area-inset-top));
+    right: 12px;
+  }
+  .lightboxPrev,
+  .lightboxNext {
+    top: auto;
+    bottom: max(18px, env(safe-area-inset-bottom));
+    transform: none;
+  }
+  .lightboxPrev {
+    left: 24px;
+  }
+  .lightboxNext {
+    right: 24px;
+  }
+  .lightboxCounter {
+    bottom: calc(max(18px, env(safe-area-inset-bottom)) + 15px);
+    font-size: 0.75rem;
+  }
+}

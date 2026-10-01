@@ -1,0 +1,159 @@
+/* Drawer: header + filters on top, the virtual list takes the remaining height. */
+.drawerContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.drawerBody {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--mantine-spacing-sm);
+}
+
+.filters {
+  flex: none;
+}
+
+/* Scroll container of the virtualiser: bounded height, its own compositing layer, no scroll anchoring jumps. */
+.scroller {
+  flex: 1;
+  min-height: 240px;
+  overflow-y: auto;
+  overflow-anchor: none;
+  contain: strict;
+  border: 1px solid var(--saa-border);
+  border-radius: var(--mantine-radius-md);
+  background: var(--saa-surface);
+}
+
+.sizer {
+  position: relative;
+  width: 100%;
+}
+
+.item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  will-change: transform;
+}
+
+.row {
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--saa-border);
+  font-size: 0.78rem;
+  line-height: 1.35;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.badge {
+  flex: none;
+}
+
+.label {
+  flex: 1;
+  min-width: 0;
+  font-weight: 700;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.kind {
+  margin-left: 6px;
+  font-weight: 500;
+  font-size: 0.68rem;
+  color: var(--saa-text3);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.time {
+  flex: none;
+  font-size: 0.68rem;
+  color: var(--saa-text3);
+  white-space: nowrap;
+}
+
+.actor {
+  margin-top: 2px;
+  font-size: 0.7rem;
+  color: var(--saa-text2);
+}
+
+.changes {
+  margin: 4px 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.change {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px;
+  min-width: 0;
+  font-family: var(--mantine-font-family-monospace);
+  font-size: 0.72rem;
+}
+
+.field {
+  color: var(--saa-text2);
+  font-weight: 600;
+}
+
+.from {
+  color: var(--saa-text3);
+  text-decoration: line-through;
+  word-break: break-word;
+}
+
+.to {
+  word-break: break-word;
+}
+
+.arrow {
+  color: var(--saa-text3);
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 44px;
+  font-size: 0.72rem;
+  color: var(--saa-text3);
+}
+
+.skeletonRow {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--saa-border);
+}
+
+/* Phones: badge + label keep the first line (label no longer squeezed by the timestamp), time wraps below. */
+@media (max-width: 47.99em) {
+  .head {
+    flex-wrap: wrap;
+    row-gap: 2px;
+  }
+  .time {
+    flex-basis: 100%;
+    white-space: normal;
+  }
+  .row {
+    padding: 10px 12px;
+  }
+}

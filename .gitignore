@@ -1,0 +1,30 @@
+# dependencies / builds
+node_modules/
+dist/
+*.tsbuildinfo
+
+# environment
+.env
+.env.*
+!.env.example
+
+# database persistent data & backups
+database/data/
+database/backups/
+
+# uploaded files
+server/uploads/
+
+# python
+__pycache__/
+*.pyc
+
+# editors / os
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# logs
+*.log
+npm-debug.log*

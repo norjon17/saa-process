@@ -1,0 +1,28 @@
+/* Form drawers / modals (FormDrawer, user edit drawer, aliases modal). */
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--mantine-spacing-md);
+  margin-top: var(--mantine-spacing-sm);
+}
+
+/*
+ * Phones: the drawer is full-screen and long forms scroll, so Cancel / Save stay pinned to the bottom of the
+ * drawer (sticky inside the scrolling drawer content) as two equal, full-width buttons.
+ */
+@media (max-width: 47.99em) {
+  .footer {
+    position: sticky;
+    bottom: 0;
+    gap: var(--mantine-spacing-sm);
+    z-index: 2;
+    margin-inline: calc(var(--mantine-spacing-md) * -1);
+    margin-bottom: calc(var(--mantine-spacing-md) * -1);
+    padding: var(--mantine-spacing-sm) var(--mantine-spacing-md) calc(var(--mantine-spacing-sm) + env(safe-area-inset-bottom));
+    background: var(--mantine-color-body);
+    border-top: 1px solid var(--saa-border);
+  }
+  .footer > * {
+    flex: 1;
+  }
+}

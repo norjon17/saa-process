@@ -1,0 +1,89 @@
+.toolBtn {
+  font-weight: 900;
+  font-size: 0.74rem;
+  color: var(--mantine-color-brand-6);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 2px 4px;
+  border-radius: 5px;
+  font-family: inherit;
+  letter-spacing: 0.2px;
+}
+.toolBtn:hover {
+  background: var(--saa-kpi-bg);
+  text-decoration: underline;
+}
+.toolBtn:focus-visible {
+  outline: 2px solid var(--mantine-color-brand-6);
+}
+
+.derived {
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  color: var(--saa-text2);
+}
+.derivedEmpty {
+  color: var(--saa-text3);
+}
+.deltaBad {
+  color: #fff;
+  background: #c62828;
+  border-radius: 5px;
+  padding: 1px 6px;
+  font-weight: 800;
+}
+
+.hdr {
+  display: block;
+  line-height: 1.15;
+}
+.hdrSub {
+  display: block;
+  font-weight: 600;
+  opacity: 0.75;
+  text-transform: none;
+  letter-spacing: 0;
+}
+.noRow {
+  opacity: 0.72;
+}
+.noRow:hover {
+  opacity: 1;
+}
+
+/* Phone cards */
+.cardArea {
+  font-size: 0.66rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--saa-text3);
+}
+.cardSummary {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 8px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--saa-text2);
+}
+.openForm {
+  width: 100%;
+  min-height: 36px;
+  border: 1px solid var(--saa-border);
+  border-radius: 8px;
+  background: var(--saa-surface2);
+  color: var(--mantine-color-brand-6);
+  font-family: inherit;
+  font-size: 0.78rem;
+  font-weight: 800;
+  cursor: pointer;
+  text-align: left;
+  padding: 6px 10px;
+}
+.openForm:focus-visible {
+  outline: 2px solid var(--mantine-color-brand-6);
+}
+

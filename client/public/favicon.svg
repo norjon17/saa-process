@@ -1,0 +1,14 @@
+<svg viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gTop" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#2168FD"/><stop offset="100%" stop-color="#3AE4C9"/></linearGradient>
+    <linearGradient id="gDot" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#2168FD"/><stop offset="100%" stop-color="#3AE4C9"/></linearGradient>
+    <linearGradient id="gText" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#003da5"/><stop offset="100%" stop-color="#0057c2"/></linearGradient>
+  </defs>
+  <rect width="52" height="52" rx="11" fill="white"/>
+  <rect x="0" y="0" width="52" height="4" rx="2" fill="url(#gTop)"/>
+  <text x="4" y="26" font-family="Manrope,Arial,sans-serif" font-weight="900" font-size="16" fill="url(#gText)" letter-spacing="-0.8">WD</text>
+  <line x1="4" y1="29" x2="48" y2="29" stroke="#e2e8f0" stroke-width=".9"/>
+  <text x="5" y="41" font-family="Manrope,Arial,sans-serif" font-weight="800" font-size="8.5" fill="#0057c2" letter-spacing="1.8">SAA</text>
+  <circle cx="44" cy="15" r="4.5" fill="url(#gDot)"/>
+  <circle cx="44" cy="15" r="2" fill="rgba(255,255,255,.6)"/>
+</svg>

@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Luzon",
+    "sortOrder": 1
+  },
+  {
+    "name": "Mindanao",
+    "sortOrder": 2
+  },
+  {
+    "name": "Visayas",
+    "sortOrder": 3
+  },
+  {
+    "name": "CB Line",
+    "sortOrder": 4
+  },
+  {
+    "name": "NPI",
+    "sortOrder": 5
+  },
+  {
+    "name": "Class 100",
+    "sortOrder": 6
+  }
+]

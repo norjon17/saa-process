@@ -1,0 +1,54 @@
+[
+  {
+    "code": "SAA34H",
+    "chosen": "Luzon",
+    "regions": {
+      "contact_chip": "Luzon",
+      "rev21": "Mindanao"
+    }
+  },
+  {
+    "code": "SAA52H",
+    "chosen": "CB Line",
+    "regions": {
+      "contact_chip": "CB Line",
+      "pm_status": "Luzon",
+      "rev21": "Luzon"
+    }
+  },
+  {
+    "code": "SAA56H",
+    "chosen": "CB Line",
+    "regions": {
+      "contact_chip": "CB Line",
+      "rev21": "Mindanao"
+    }
+  },
+  {
+    "code": "SAA70H",
+    "chosen": "Mindanao",
+    "regions": {
+      "contact_chip": "Mindanao",
+      "pm_status": "Mindanao",
+      "rev21": "Class 100"
+    }
+  },
+  {
+    "code": "SAA77H",
+    "chosen": "Mindanao",
+    "regions": {
+      "contact_chip": "Mindanao",
+      "pm_status": "CB Line",
+      "rev21": "CB Line"
+    }
+  },
+  {
+    "code": "SAA78H",
+    "chosen": "CB Line",
+    "regions": {
+      "contact_chip": "CB Line",
+      "pm_status": "CB Line",
+      "rev21": "Luzon"
+    }
+  }
+]

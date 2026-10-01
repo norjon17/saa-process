@@ -1,0 +1,47 @@
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 14px;
+  align-items: center;
+  font-size: 0.66rem;
+  font-weight: 700;
+  color: var(--saa-text2);
+}
+.legendItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.swatch {
+  width: 22px;
+  height: 16px;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.56rem;
+  font-weight: 800;
+  color: #fff;
+}
+.hint {
+  font-size: 0.6rem;
+  color: var(--saa-text3);
+  font-weight: 500;
+}
+
+/* Phones: legend doubles as the month summary (KPI tiles hidden) — bigger pills with the count. */
+.legend[data-counts] {
+  gap: 6px;
+  font-size: 0.72rem;
+}
+.legend[data-counts] .legendItem {
+  padding: 3px 8px 3px 4px;
+  border-radius: 999px;
+  border: 1px solid var(--saa-border);
+  background: var(--saa-surface);
+}
+.count {
+  font-weight: 900;
+  color: var(--mantine-color-text);
+  margin-left: 2px;
+}

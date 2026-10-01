@@ -1,0 +1,45 @@
+{
+  "name": "@saa/server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "SAA Process API (Fastify + Drizzle + PostgreSQL)",
+  "scripts": {
+    "dev": "tsx watch --env-file=../.env src/server.ts",
+    "start": "node --env-file=../.env dist/server.js",
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "tsx --env-file=../.env src/db/migrate.ts",
+    "db:studio": "drizzle-kit studio",
+    "db:seed": "tsx --env-file=../.env src/seed/index.ts"
+  },
+  "dependencies": {
+    "@fastify/compress": "9.2.0",
+    "@fastify/cookie": "11.1.2",
+    "@fastify/cors": "11.3.0",
+    "@fastify/multipart": "10.1.2",
+    "@fastify/rate-limit": "11.2.0",
+    "@fastify/sensible": "6.0.5",
+    "@fastify/static": "10.1.4",
+    "csv-parse": "7.0.3",
+    "dayjs": "1.11.23",
+    "drizzle-orm": "0.45.3",
+    "exceljs": "4.4.0",
+    "fastify": "5.12.5",
+    "fastify-plugin": "6.0.0",
+    "fastify-type-provider-zod": "7.0.0",
+    "pg": "8.23.0",
+    "zod": "4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.2",
+    "@types/pg": "8.23.1",
+    "drizzle-kit": "0.31.11",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2",
+    "vitest": "5.0.2"
+  }
+}
