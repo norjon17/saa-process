@@ -6,7 +6,10 @@ workflows and a single-file HTML dashboard:
 1. **Endorsement log** — per date + shift (DS/NS) issue hand-off rows per tool.
 2. **Meancheck verdict** — upload the 3 CSVs of a lot → 24 checks → PASSED/FAILED (logic verified against the Excel template).
 3. **1st Meancheck daily grid** — per tool × day status cells (P/F Auto/Man, IDLE, MB) with derived Overall.
-Plus PM Status (monthly per tool), minor tabs (Low Cpk, Circuit Burn, Contact Chip, FIT OCAP, Weekly OOC) and Admin.
+Plus PM Status (monthly per tool) and Contact Chip (both under Maintenance) and Admin.
+Low Cpk, Circuit Burn, FIT OCAP and Weekly OOC were **removed from the app on the process owner's request (2026-10)**:
+their pages and API routes are gone, but their tables (`server/src/db/schema/minor.ts`) and seeded rows are kept on
+purpose — do not drop them without asking.
 
 Source documents (read-only, never modify): `D:\Workstation\evalice\docs`. Seed data is extracted from them once into
 `database/seed/` by the Python scripts in `database/extract/`.
@@ -109,6 +112,13 @@ NONE rows black with blue date.
   `defaultPendingComponent` and `app/shell/RouteProgress.tsx` drives the top bar from router + query activity.
 - Charts are lazy (`components/charts/lazyChart.tsx`) so recharts only downloads on chart routes; vendor chunk groups are
   in `client/vite.config.ts` (`build.rolldownOptions.output.codeSplitting.groups`).
+## Navigation (round 4)
+- `app/shell/nav-items.ts` is the single source of the menu: collapsible groups ("folders", Stratum-style) with icons;
+  open state persists per browser (`ui.store` `navGroupsOpen`), the group of the current page auto-opens.
+- `app/shell/Breadcrumbs.tsx` renders Home › Group › Page from the same tree; detail pages add the last segment with
+  `useBreadcrumb(label)` (lot number, tool code).
+- Endorse By on a new board row starts **empty** (process owner's request) — the API allows `endorseBy: []`.
+
 ## Phones & tablets (round 3)
 - Breakpoints: `useIsMobile()` (`client/src/lib/useIsMobile.ts`) = below 768px (Mantine `sm`) → phone layout; the navbar
   becomes a burger drawer below `md` (992px, phones + tablets) and then shows the clock/shift badge at its top.

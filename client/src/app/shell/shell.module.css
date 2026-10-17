@@ -146,13 +146,19 @@
   background: var(--saa-surface);
   border-right: 1px solid var(--saa-border);
 }
-.navGroup {
-  font-size: 0.58rem;
+.navTree {
+  padding: 8px 0 12px;
+}
+/* Group ("folder") rows — Stratum-style: icon, bold label, chevron; the group holding the current page is tinted. */
+.navParent {
+  border-radius: 8px;
+  margin: 2px 8px;
+  width: auto;
   font-weight: 800;
-  letter-spacing: 1.2px;
-  text-transform: uppercase;
-  color: var(--saa-text3);
-  padding: 12px 14px 4px;
+  color: var(--saa-text2);
+}
+.navParent[data-current] {
+  color: var(--mantine-color-brand-6);
 }
 .navLink {
   border-radius: 8px;
@@ -208,4 +214,22 @@
   .header {
     padding: 0 10px;
   }
+}
+
+/* Breadcrumb bar above the page content. */
+.crumbs {
+  margin: -4px 0 12px;
+  min-width: 0;
+  flex-wrap: wrap;
+  row-gap: 2px;
+}
+.crumbHome {
+  display: inline-flex;
+  align-items: center;
+}
+.crumbDetail {
+  max-width: 60vw;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }

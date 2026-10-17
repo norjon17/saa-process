@@ -4,6 +4,7 @@ import { useQuery } from '@tanstack/react-query';
 import { createFileRoute, Link, useNavigate } from '@tanstack/react-router';
 import { useMemo, useState } from 'react';
 
+import { useBreadcrumb } from '@/app/shell/Breadcrumbs';
 import { lazyChart } from '@/components/charts/lazyChart';
 import { DataTable } from '@/components/table/DataTable';
 import { EmptyState } from '@/components/ui/EmptyState';
@@ -46,6 +47,7 @@ function ToolPage() {
   const all = useQuery({ ...listQuery({ toolId: id, page: 1, pageSize: 500, sort: 'date:desc', includeNone: false }), enabled: valid });
 
   const tool = tools.data?.find((t) => t.id === id);
+  useBreadcrumb(tool?.code);
   const refs = useMemo<ColumnRefs>(() => ({ users: users.data ?? [], tools: tools.data ?? [], categories: categories.data ?? [] }), [users.data, tools.data, categories.data]);
   const isMobile = useIsMobile();
   const columns = useMemo(() => buildEndorsementColumns({ mode: 'tool', refs, mobile: isMobile }), [refs, isMobile]);

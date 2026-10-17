@@ -2,19 +2,18 @@ import type { UserRole } from '@shared/domain';
 import {
   IconAdjustments,
   IconCalendarStats,
-  IconChartBar,
   IconClipboardList,
   IconCpu,
   IconFlask,
   IconHistory,
   IconLayoutGrid,
   IconListDetails,
-  IconMicroscope,
   IconSettings,
+  IconSettingsCog,
+  IconShieldLock,
   IconTool,
   IconUpload,
   IconUsers,
-  IconWaveSine,
   type Icon,
 } from '@tabler/icons-react';
 
@@ -26,6 +25,8 @@ export interface NavItem {
 }
 export interface NavGroup {
   group: string;
+  /** Icon of the collapsible group ("folder") in the navbar. */
+  icon: Icon;
   roles?: UserRole[];
   items: NavItem[];
 }
@@ -33,6 +34,7 @@ export interface NavGroup {
 export const navItems: NavGroup[] = [
   {
     group: 'Endorsement',
+    icon: IconClipboardList,
     items: [
       { to: '/endorsement', label: 'Shift Board', icon: IconClipboardList, exact: true },
       { to: '/endorsement/history', label: 'History', icon: IconHistory },
@@ -40,6 +42,7 @@ export const navItems: NavGroup[] = [
   },
   {
     group: 'Meancheck',
+    icon: IconFlask,
     items: [
       { to: '/meancheck', label: 'Lots', icon: IconFlask, exact: true },
       { to: '/meancheck/new', label: 'New Verdict', icon: IconUpload },
@@ -49,20 +52,15 @@ export const navItems: NavGroup[] = [
   },
   {
     group: 'Maintenance',
-    items: [{ to: '/pm-status', label: 'PM Status', icon: IconTool }],
-  },
-  {
-    group: 'Monitoring',
+    icon: IconSettingsCog,
     items: [
-      { to: '/low-cpk', label: 'Low Cpk', icon: IconChartBar },
-      { to: '/circuit-burn', label: 'Circuit Burn', icon: IconWaveSine },
+      { to: '/pm-status', label: 'PM Status', icon: IconTool },
       { to: '/contact-chip', label: 'Contact Chip', icon: IconCpu },
-      { to: '/fit-ocap', label: 'FIT OCAP', icon: IconMicroscope },
-      { to: '/weekly-ooc', label: 'Weekly OOC', icon: IconListDetails },
     ],
   },
   {
     group: 'Admin',
+    icon: IconShieldLock,
     roles: ['admin'],
     items: [
       { to: '/admin/users', label: 'Users', icon: IconUsers },
@@ -72,3 +70,21 @@ export const navItems: NavGroup[] = [
     ],
   },
 ];
+
+export const isNavItemActive = (it: NavItem, pathname: string) => (it.exact ? pathname === it.to : pathname === it.to || pathname.startsWith(it.to + '/'));
+
+/**
+ * Group + item for a pathname (breadcrumb, auto-opening the active group). The most specific match wins, so
+ * `/meancheck/new` resolves to "New Verdict" and `/meancheck/12` falls back to "Lots" (exact items also match their
+ * detail pages here).
+ */
+export function findNavItem(pathname: string): { group: NavGroup; item: NavItem } | null {
+  let best: { group: NavGroup; item: NavItem } | null = null;
+  for (const group of navItems) {
+    for (const item of group.items) {
+      const hit = pathname === item.to || pathname.startsWith(item.to + '/');
+      if (hit && (!best || item.to.length > best.item.to.length)) best = { group, item };
+    }
+  }
+  return best;
+}

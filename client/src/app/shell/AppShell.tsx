@@ -6,6 +6,7 @@ import { useIsMobile } from '@/lib/useIsMobile';
 import { useUiStore } from '@/stores/ui.store';
 
 import { BrandGroup } from './BrandGroup';
+import { Breadcrumbs } from './Breadcrumbs';
 import { LiveClock, ShiftBadge } from './LiveClock';
 import { Navbar } from './Navbar';
 import classes from './shell.module.css';
@@ -49,6 +50,7 @@ export function AppShell() {
       <MantineAppShell.Main className={classes.main}>
         <Container size={1480} px={0}>
           {isMobile && headerActions && <div className={`${classes.mobileActions} saa-no-print`}>{headerActions}</div>}
+          <Breadcrumbs />
           <Outlet />
         </Container>
       </MantineAppShell.Main>

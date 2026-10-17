@@ -1,6 +1,6 @@
 import { Button, Group, Tabs } from '@mantine/core';
 import { modals } from '@mantine/modals';
-import { IconFileSpreadsheet, IconFileTypeCsv, IconLayoutList, IconPrinter } from '@tabler/icons-react';
+import { IconCamera, IconFileSpreadsheet, IconFileTypeCsv, IconLayoutList, IconMail, IconPrinter } from '@tabler/icons-react';
 import { useQuery } from '@tanstack/react-query';
 import { createFileRoute } from '@tanstack/react-router';
 import { useCallback, useMemo } from 'react';
@@ -14,6 +14,7 @@ import { PageHeader } from '@/components/ui/PageHeader';
 import { SaveIndicator } from '@/components/ui/SaveIndicator';
 import { KpiSkeleton } from '@/components/ui/Skeletons';
 import { attachmentsQuery, boardQuery, useNoneAll } from '@/features/endorsement/api';
+import { useBoardShare } from '@/features/endorsement/capture';
 import { EXPORT_HEADERS, exportRow, type ColumnRefs } from '@/features/endorsement/columns';
 import { BoardKpis } from '@/features/endorsement/components/BoardKpis';
 import { BoardSection } from '@/features/endorsement/components/BoardSection';
@@ -82,8 +83,17 @@ function ShiftBoardPage() {
   // Keeps the selected section (and any other param) when stepping through shifts.
   const onShiftChange = useCallback((v: { date: string; shift: Shift }) => void navigate({ search: (prev) => ({ ...prev, ...v }) }), [navigate]);
 
+  // Capture (board picture) + Email (mailto with summary); the picture is copied for pasting into the mail.
+  const share = useBoardShare({ date, shift, board: board.data });
+
   useHeaderActions(
     <Group gap={6} wrap="nowrap">
+      <Button size="compact-xs" variant="white" color="navy" leftSection={<IconCamera size={13} />} onClick={share.openCapture} disabled={!share.ready}>
+        Capture
+      </Button>
+      <Button size="compact-xs" variant="white" color="navy" leftSection={<IconMail size={13} />} onClick={share.openEmail} disabled={!share.ready}>
+        Email
+      </Button>
       <Button size="compact-xs" variant="white" color="navy" leftSection={<IconFileTypeCsv size={13} />} onClick={() => downloadText(`SAA_Endorsement_${date}_${shift}.csv`, toCsv(EXPORT_HEADERS, (items ?? []).map(exportRow)))}>
         CSV
       </Button>
@@ -94,7 +104,7 @@ function ShiftBoardPage() {
         Print
       </Button>
     </Group>,
-    [date, shift, items],
+    [date, shift, items, share.ready, share.openCapture, share.openEmail],
   );
 
   const markAllNone = () =>
@@ -133,6 +143,7 @@ function ShiftBoardPage() {
           </Tabs.Panel>
         ))}
       </Tabs>
+      {share.modals}
     </>
   );
 }

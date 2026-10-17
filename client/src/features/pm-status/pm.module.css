@@ -87,3 +87,7 @@
   outline: 2px solid var(--mantine-color-brand-6);
 }
 
+
+.legendRow {
+  margin-bottom: 8px;
+}

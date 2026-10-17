@@ -27,6 +27,7 @@
     "@tanstack/react-table": "9.2.4",
     "@tanstack/react-virtual": "3.14.13",
     "dayjs": "1.11.23",
+    "modern-screenshot": "4.7.0",
     "react": "19.3.0",
     "react-dom": "19.3.0",
     "recharts": "3.10.1",

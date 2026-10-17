@@ -1,0 +1,41 @@
+.preview {
+  min-height: 160px;
+  max-height: 62vh;
+  overflow: auto;
+  border: 1px solid var(--saa-border);
+  border-radius: var(--mantine-radius-md);
+  background: var(--saa-surface2);
+}
+.previewImg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.previewState {
+  min-height: 160px;
+}
+
+.summary {
+  margin: 0;
+  max-height: 220px;
+  overflow: auto;
+  padding: 8px 10px;
+  border: 1px solid var(--saa-border);
+  border-radius: var(--mantine-radius-sm);
+  background: var(--saa-surface2);
+  color: var(--saa-text2);
+  font-family: ui-monospace, 'Cascadia Mono', Consolas, monospace;
+  font-size: 11.5px;
+  line-height: 1.45;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+/* Phones: full-width stacked action buttons at the bottom of the full-screen modal. */
+.mobileActions {
+  flex-direction: column-reverse;
+  align-items: stretch;
+}
+.mobileActions > * {
+  width: 100%;
+}

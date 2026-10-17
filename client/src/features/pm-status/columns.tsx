@@ -93,7 +93,7 @@ export interface PmColumnOptions {
 const DELTA_IDS = ['fixVacLDelta', 'fixVacRDelta', 'pickVacLDelta', 'pickVacRDelta'] as const;
 
 /** Number of vacuum deltas over the limit, and how many of the 18 measurements are filled in. */
-function pmProgress(r: PmItem): { bad: number; filled: number } {
+export function pmProgress(r: PmItem): { bad: number; filled: number } {
   const row = r.row;
   if (!row) return { bad: 0, filled: 0 };
   const bad = DELTA_IDS.filter((id) => {

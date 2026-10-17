@@ -23,7 +23,6 @@ import endorsementsRoutes from './modules/endorsements/routes.js';
 import healthRoutes from './modules/health/routes.js';
 import meancheckDailyRoutes from './modules/meancheck-daily/routes.js';
 import meancheckRoutes from './modules/meancheck/routes.js';
-import minorRoutes from './modules/minor/routes.js';
 import modelsRoutes from './modules/models/routes.js';
 import pmStatusRoutes from './modules/pm-status/routes.js';
 import toolsRoutes from './modules/tools/routes.js';
@@ -79,7 +78,6 @@ export async function buildApp(opts: BuildAppOptions = {}): Promise<FastifyInsta
   await app.register(meancheckDailyRoutes, { prefix: '/api/meancheck/daily' });
   await app.register(pmStatusRoutes, { prefix: '/api/pm-status' });
   await app.register(contactChipRoutes, { prefix: '/api/contact-chip' });
-  await app.register(minorRoutes, { prefix: '/api' });
 
   // Serve the built client (same origin → simple cookies) when it exists; SPA fallback for non-API GETs.
   const clientDist = fileURLToPath(new URL('../../client/dist', import.meta.url));

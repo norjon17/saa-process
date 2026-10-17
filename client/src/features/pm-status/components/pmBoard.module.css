@@ -1,0 +1,179 @@
+/* PM tool cards — same look as the Meancheck Tool Status board (styling copied, not shared). */
+.regionCard {
+  align-self: start;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--saa-border);
+  background: var(--saa-surface);
+}
+.regionHdr {
+  padding: 9px 14px;
+  font-weight: 800;
+  font-size: 0.78rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  color: #fff;
+  background: linear-gradient(90deg, #455a64, #607d8b);
+}
+.regionLuzon {
+  background: linear-gradient(90deg, #1565c0, #1976d2);
+}
+.regionMindanao {
+  background: linear-gradient(90deg, #2e7d32, #388e3c);
+}
+.regionCounts {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.count {
+  font-size: 0.6rem;
+  font-weight: 800;
+  padding: 2px 8px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  white-space: nowrap;
+}
+.toolGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(168px, 1fr));
+  gap: 8px;
+  padding: 10px;
+  background: var(--saa-surface2);
+}
+
+.tool {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  border-radius: 8px;
+  padding: 8px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  color: #111;
+  font-family: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+.tool:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--mantine-shadow-md);
+}
+.tool:focus-visible {
+  outline: 3px solid var(--mantine-color-brand-6);
+  outline-offset: 2px;
+}
+.toolOpen {
+  outline: 3px solid var(--mantine-color-brand-6);
+  outline-offset: 2px;
+}
+.done {
+  background: #00c000;
+  color: #062e06;
+}
+.missed {
+  background: #e53935;
+  color: #fff;
+}
+.pending {
+  background: #ffff00;
+  color: #4d4200;
+}
+.none {
+  background: #cfd8dc;
+  color: #37474f;
+}
+
+.toolTop {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 6px;
+}
+.toolCode {
+  font-size: 0.9rem;
+  font-weight: 900;
+  letter-spacing: -0.2px;
+}
+.toolType {
+  font-size: 0.6rem;
+  font-weight: 800;
+  opacity: 0.8;
+  white-space: nowrap;
+}
+.toolLine {
+  font-size: 0.6rem;
+  font-weight: 600;
+  opacity: 0.85;
+  display: flex;
+  justify-content: space-between;
+  gap: 6px;
+  min-width: 0;
+}
+.toolLine b {
+  font-weight: 800;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.toolState {
+  margin-top: 4px;
+  font-size: 0.66rem;
+  font-weight: 900;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 4px;
+}
+.hint {
+  font-size: 0.56rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: none;
+  opacity: 0.75;
+  white-space: nowrap;
+}
+
+.legend {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 0.64rem;
+  font-weight: 700;
+  color: var(--saa-text2);
+}
+.legendSwatch {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  margin-right: 4px;
+  vertical-align: -2px;
+}
+
+/* ---- Phones ---- */
+@media (max-width: 47.99em) {
+  .toolGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 6px;
+    padding: 8px;
+  }
+  .regionHdr {
+    flex-wrap: wrap;
+    padding: 8px 10px;
+  }
+  .tool:hover {
+    transform: none;
+  }
+}

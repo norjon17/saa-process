@@ -4,6 +4,7 @@ import { useQuery } from '@tanstack/react-query';
 import { createFileRoute, Link, useNavigate } from '@tanstack/react-router';
 import { useMemo } from 'react';
 
+import { useBreadcrumb } from '@/app/shell/Breadcrumbs';
 import { EmptyState } from '@/components/ui/EmptyState';
 import { lotQuery, useDeleteLot } from '@/features/meancheck/api';
 import { confirmDeleteLot } from '@/features/meancheck/components/LotTable';
@@ -30,6 +31,7 @@ function LotPage() {
   const del = useDeleteLot();
   const lot = useQuery({ ...lotQuery(id), enabled: Number.isInteger(id) && id > 0 });
   const view = useMemo(() => (lot.data ? toLotView(lot.data) : null), [lot.data]);
+  useBreadcrumb(lot.data?.lotNo);
 
   const exportCsv = () => {
     if (!view) return;

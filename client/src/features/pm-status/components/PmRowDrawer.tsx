@@ -7,6 +7,7 @@ import { TOOL_TYPES } from '@shared/domain';
 
 import { fmtNum } from '@/lib/format';
 import { monthLabel } from '@/lib/time';
+import { useIsMobile } from '@/lib/useIsMobile';
 import { useCan } from '@/stores/session.store';
 
 import type { PmItem, PmPatch } from '../api';
@@ -64,8 +65,9 @@ export interface PmRowDrawerProps {
 
 /** Vertical form for one tool's PM row — the narrow-screen alternative to the wide grid. */
 export function PmRowDrawer({ item, month, eeOptions, onClose }: PmRowDrawerProps) {
+  const isMobile = useIsMobile();
   return (
-    <Drawer opened={item !== null} onClose={onClose} position="right" size="lg" padding="md" title={item ? `${item.tool.code} · PM ${monthLabel(month)}` : ''}>
+    <Drawer opened={item !== null} onClose={onClose} position="right" size={isMobile ? '100%' : 'lg'} padding="md" title={item ? `${item.tool.code} · PM ${monthLabel(month)}` : ''}>
       {item && <PmRowForm key={`${item.tool.id}-${month}`} item={item} month={month} eeOptions={eeOptions} onClose={onClose} />}
     </Drawer>
   );

@@ -10,7 +10,6 @@ import { DataTable } from '@/components/table/DataTable';
 import { SectionCard } from '@/components/ui/SectionCard';
 import type { Attachment, Endorsement } from '@/lib/api/types';
 import { useIsMobile } from '@/lib/useIsMobile';
-import { useCurrentUser } from '@/stores/session.store';
 import { SECTIONS } from '@/theme/colors';
 
 import { useCreateEndorsement, useDeleteAttachment, useDeleteEndorsements, usePatchEndorsement, useUploadAttachments } from '../api';
@@ -40,7 +39,6 @@ const rowId = (r: Endorsement) => String(r.id);
  * Memoised: the board passes stable per-section arrays so untouched sections skip re-rendering.
  */
 export const BoardSection = memo(function BoardSection({ sectionKey, date, shift, rows, attachments, refs, loading }: BoardSectionProps) {
-  const user = useCurrentUser();
   const create = useCreateEndorsement();
   const { mutate: patchRow } = usePatchEndorsement();
   const { mutate: removeRows } = useDeleteEndorsements();
@@ -84,9 +82,10 @@ export const BoardSection = memo(function BoardSection({ sectionKey, date, shift
         sectionKey,
         categoryId: sectionCategories.find((c) => c.isActive)?.id ?? null,
         progress: 'open',
-        endorseBy: user ? [user.id] : [],
+        // Starts empty on purpose (process owner's request): people pick the names, same as Endorse To.
+        endorseBy: [],
       }),
-    [createRow, date, shift, sectionKey, sectionCategories, user],
+    [createRow, date, shift, sectionKey, sectionCategories],
   );
 
   const addNone = useCallback(() => createRow({ date, shift, sectionKey, isNone: true }), [createRow, date, shift, sectionKey]);

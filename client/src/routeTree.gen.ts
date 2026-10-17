@@ -13,13 +13,9 @@ import { Route as AuthedRouteImport } from './routes/_authed'
 import { Route as LoginRouteImport } from './routes/login'
 import { Route as AuthedIndexRouteImport } from './routes/_authed/index'
 import { Route as AuthedAdminRouteImport } from './routes/_authed/_admin'
-import { Route as AuthedCircuitBurnRouteImport } from './routes/_authed/circuit-burn'
 import { Route as AuthedContactChipRouteImport } from './routes/_authed/contact-chip'
 import { Route as AuthedFirstMeancheckRouteImport } from './routes/_authed/first-meancheck'
-import { Route as AuthedFitOcapRouteImport } from './routes/_authed/fit-ocap'
-import { Route as AuthedLowCpkRouteImport } from './routes/_authed/low-cpk'
 import { Route as AuthedPmStatusRouteImport } from './routes/_authed/pm-status'
-import { Route as AuthedWeeklyOocRouteImport } from './routes/_authed/weekly-ooc'
 import { Route as AuthedEndorsementIndexRouteImport } from './routes/_authed/endorsement/index'
 import { Route as AuthedEndorsementHistoryRouteImport } from './routes/_authed/endorsement/history'
 import { Route as AuthedMeancheckIndexRouteImport } from './routes/_authed/meancheck/index'
@@ -50,11 +46,6 @@ const AuthedAdminRoute = AuthedAdminRouteImport.update({
   id: '/_admin',
   getParentRoute: () => AuthedRoute,
 } as any)
-const AuthedCircuitBurnRoute = AuthedCircuitBurnRouteImport.update({
-  id: '/circuit-burn',
-  path: '/circuit-burn',
-  getParentRoute: () => AuthedRoute,
-} as any)
 const AuthedContactChipRoute = AuthedContactChipRouteImport.update({
   id: '/contact-chip',
   path: '/contact-chip',
@@ -65,24 +56,9 @@ const AuthedFirstMeancheckRoute = AuthedFirstMeancheckRouteImport.update({
   path: '/first-meancheck',
   getParentRoute: () => AuthedRoute,
 } as any)
-const AuthedFitOcapRoute = AuthedFitOcapRouteImport.update({
-  id: '/fit-ocap',
-  path: '/fit-ocap',
-  getParentRoute: () => AuthedRoute,
-} as any)
-const AuthedLowCpkRoute = AuthedLowCpkRouteImport.update({
-  id: '/low-cpk',
-  path: '/low-cpk',
-  getParentRoute: () => AuthedRoute,
-} as any)
 const AuthedPmStatusRoute = AuthedPmStatusRouteImport.update({
   id: '/pm-status',
   path: '/pm-status',
-  getParentRoute: () => AuthedRoute,
-} as any)
-const AuthedWeeklyOocRoute = AuthedWeeklyOocRouteImport.update({
-  id: '/weekly-ooc',
-  path: '/weekly-ooc',
   getParentRoute: () => AuthedRoute,
 } as any)
 const AuthedEndorsementIndexRoute = AuthedEndorsementIndexRouteImport.update({
@@ -147,13 +123,9 @@ const AuthedEndorsementToolsToolIdRoute =
 export interface FileRoutesByFullPath {
   '/': typeof AuthedIndexRoute
   '/login': typeof LoginRoute
-  '/circuit-burn': typeof AuthedCircuitBurnRoute
   '/contact-chip': typeof AuthedContactChipRoute
   '/first-meancheck': typeof AuthedFirstMeancheckRoute
-  '/fit-ocap': typeof AuthedFitOcapRoute
-  '/low-cpk': typeof AuthedLowCpkRoute
   '/pm-status': typeof AuthedPmStatusRoute
-  '/weekly-ooc': typeof AuthedWeeklyOocRoute
   '/endorsement/history': typeof AuthedEndorsementHistoryRoute
   '/meancheck/$lotId': typeof AuthedMeancheckLotIdRoute
   '/meancheck/new': typeof AuthedMeancheckNewRoute
@@ -169,13 +141,9 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/login': typeof LoginRoute
   '/': typeof AuthedIndexRoute
-  '/circuit-burn': typeof AuthedCircuitBurnRoute
   '/contact-chip': typeof AuthedContactChipRoute
   '/first-meancheck': typeof AuthedFirstMeancheckRoute
-  '/fit-ocap': typeof AuthedFitOcapRoute
-  '/low-cpk': typeof AuthedLowCpkRoute
   '/pm-status': typeof AuthedPmStatusRoute
-  '/weekly-ooc': typeof AuthedWeeklyOocRoute
   '/endorsement/history': typeof AuthedEndorsementHistoryRoute
   '/meancheck/$lotId': typeof AuthedMeancheckLotIdRoute
   '/meancheck/new': typeof AuthedMeancheckNewRoute
@@ -193,13 +161,9 @@ export interface FileRoutesById {
   '/_authed': typeof AuthedRouteWithChildren
   '/login': typeof LoginRoute
   '/_authed/_admin': typeof AuthedAdminRouteWithChildren
-  '/_authed/circuit-burn': typeof AuthedCircuitBurnRoute
   '/_authed/contact-chip': typeof AuthedContactChipRoute
   '/_authed/first-meancheck': typeof AuthedFirstMeancheckRoute
-  '/_authed/fit-ocap': typeof AuthedFitOcapRoute
-  '/_authed/low-cpk': typeof AuthedLowCpkRoute
   '/_authed/pm-status': typeof AuthedPmStatusRoute
-  '/_authed/weekly-ooc': typeof AuthedWeeklyOocRoute
   '/_authed/': typeof AuthedIndexRoute
   '/_authed/endorsement/history': typeof AuthedEndorsementHistoryRoute
   '/_authed/meancheck/$lotId': typeof AuthedMeancheckLotIdRoute
@@ -218,13 +182,9 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/login'
-    | '/circuit-burn'
     | '/contact-chip'
     | '/first-meancheck'
-    | '/fit-ocap'
-    | '/low-cpk'
     | '/pm-status'
-    | '/weekly-ooc'
     | '/endorsement/history'
     | '/meancheck/$lotId'
     | '/meancheck/new'
@@ -240,13 +200,9 @@ export interface FileRouteTypes {
   to:
     | '/login'
     | '/'
-    | '/circuit-burn'
     | '/contact-chip'
     | '/first-meancheck'
-    | '/fit-ocap'
-    | '/low-cpk'
     | '/pm-status'
-    | '/weekly-ooc'
     | '/endorsement/history'
     | '/meancheck/$lotId'
     | '/meancheck/new'
@@ -263,13 +219,9 @@ export interface FileRouteTypes {
     | '/_authed'
     | '/login'
     | '/_authed/_admin'
-    | '/_authed/circuit-burn'
     | '/_authed/contact-chip'
     | '/_authed/first-meancheck'
-    | '/_authed/fit-ocap'
-    | '/_authed/low-cpk'
     | '/_authed/pm-status'
-    | '/_authed/weekly-ooc'
     | '/_authed/'
     | '/_authed/endorsement/history'
     | '/_authed/meancheck/$lotId'
@@ -319,13 +271,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AuthedAdminRouteImport
       parentRoute: typeof AuthedRoute
     }
-    '/_authed/circuit-burn': {
-      id: '/_authed/circuit-burn'
-      path: '/circuit-burn'
-      fullPath: '/circuit-burn'
-      preLoaderRoute: typeof AuthedCircuitBurnRouteImport
-      parentRoute: typeof AuthedRoute
-    }
     '/_authed/contact-chip': {
       id: '/_authed/contact-chip'
       path: '/contact-chip'
@@ -340,32 +285,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AuthedFirstMeancheckRouteImport
       parentRoute: typeof AuthedRoute
     }
-    '/_authed/fit-ocap': {
-      id: '/_authed/fit-ocap'
-      path: '/fit-ocap'
-      fullPath: '/fit-ocap'
-      preLoaderRoute: typeof AuthedFitOcapRouteImport
-      parentRoute: typeof AuthedRoute
-    }
-    '/_authed/low-cpk': {
-      id: '/_authed/low-cpk'
-      path: '/low-cpk'
-      fullPath: '/low-cpk'
-      preLoaderRoute: typeof AuthedLowCpkRouteImport
-      parentRoute: typeof AuthedRoute
-    }
     '/_authed/pm-status': {
       id: '/_authed/pm-status'
       path: '/pm-status'
       fullPath: '/pm-status'
       preLoaderRoute: typeof AuthedPmStatusRouteImport
-      parentRoute: typeof AuthedRoute
-    }
-    '/_authed/weekly-ooc': {
-      id: '/_authed/weekly-ooc'
-      path: '/weekly-ooc'
-      fullPath: '/weekly-ooc'
-      preLoaderRoute: typeof AuthedWeeklyOocRouteImport
       parentRoute: typeof AuthedRoute
     }
     '/_authed/endorsement/': {
@@ -468,13 +392,9 @@ const AuthedAdminRouteWithChildren = AuthedAdminRoute._addFileChildren(
 
 interface AuthedRouteChildren {
   AuthedAdminRoute: typeof AuthedAdminRouteWithChildren
-  AuthedCircuitBurnRoute: typeof AuthedCircuitBurnRoute
   AuthedContactChipRoute: typeof AuthedContactChipRoute
   AuthedFirstMeancheckRoute: typeof AuthedFirstMeancheckRoute
-  AuthedFitOcapRoute: typeof AuthedFitOcapRoute
-  AuthedLowCpkRoute: typeof AuthedLowCpkRoute
   AuthedPmStatusRoute: typeof AuthedPmStatusRoute
-  AuthedWeeklyOocRoute: typeof AuthedWeeklyOocRoute
   AuthedIndexRoute: typeof AuthedIndexRoute
   AuthedEndorsementHistoryRoute: typeof AuthedEndorsementHistoryRoute
   AuthedMeancheckLotIdRoute: typeof AuthedMeancheckLotIdRoute
@@ -487,13 +407,9 @@ interface AuthedRouteChildren {
 
 const AuthedRouteChildren: AuthedRouteChildren = {
   AuthedAdminRoute: AuthedAdminRouteWithChildren,
-  AuthedCircuitBurnRoute: AuthedCircuitBurnRoute,
   AuthedContactChipRoute: AuthedContactChipRoute,
   AuthedFirstMeancheckRoute: AuthedFirstMeancheckRoute,
-  AuthedFitOcapRoute: AuthedFitOcapRoute,
-  AuthedLowCpkRoute: AuthedLowCpkRoute,
   AuthedPmStatusRoute: AuthedPmStatusRoute,
-  AuthedWeeklyOocRoute: AuthedWeeklyOocRoute,
   AuthedIndexRoute: AuthedIndexRoute,
   AuthedEndorsementHistoryRoute: AuthedEndorsementHistoryRoute,
   AuthedMeancheckLotIdRoute: AuthedMeancheckLotIdRoute,

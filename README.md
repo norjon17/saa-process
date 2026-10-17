@@ -74,7 +74,7 @@ Send that link to your testers. Press **Ctrl+C** to stop the server and the tunn
   lot list, per-tool status board.
 - **1st Meancheck daily** — tools × days grid (P/F Auto/Man, IDLE, MB) with a server-derived Overall and pass-rate chart.
 - **PM Status** — monthly PM checklist per tool with derived vacuum averages/deltas.
-- **Monitoring tabs** — Low Cpk, Circuit Burn, Contact Chip, FIT OCAP, Weekly OOC.
+- **Contact Chip** — monthly per-tool contact chip grid (under Maintenance, next to PM Status).
 - **Admin** — users (4-digit ID login), tools, regions, model specs, categories.
 
 ## Meancheck rule (as implemented in `server/src/shared/meancheck/engine.ts`)
